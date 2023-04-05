@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#191E23;
+    ;
+}
+.header{
+  position: fixed; 
+  top: 0;
+  left: 70%;
+  width: 100%;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  z-index: 100;
+}
+.header>nav{  
+     display: inline; 
+     margin: 10px;
+    font-size: 20px; 
+    font-weight: bold;
+    color: aliceblue;
+}
+/*#heder>li {
+    list-style-type: none;
+     position: relative; 
+     left: 70%;
+    top: 10px; 
+     display: inline; 
+     margin: 10px;
+    font-size: 20px; 
+    font-weight: bold;
+
+}
+.main-head-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+body{
+    background: #191E23 
+}
+/* #heder>li>a:hover {
+    font-size: 23px;
+    color: rgb(3, 225, 245);
+    box-shadow: 0px 100px 88px 0px rgba(26, 202, 218, 0.25);
+
+}
+
+#heder>li>a {
+
+    text-decoration: none;
+    /* width: 93px;
+    height: 24px;
+    left: 886px;
+    top: 50px; */
+
+    /* font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: aliceblue; */
+/* }
+#home{
+   
+    width: 1440px;
+    height: 712px;
+    left: 0px;
+    top: 0px;
+    
+    background: #191E23 
+}
+.main-head-bar{
+    background: #191E23 
+}
+body{
+    background: #191E23 
+}
+
+#home>aside{
+position: absolute;
+padding-left: 70%;
+top: 30%;
+}
+#home>aside>img{
+
+max-width: 402px;
+max-height: 381px; 
+ height: 381px;
+width: 402px;
+left: 905px;
+top: 300px;
+/* size: clamp(38px,9vw,40px); */
+/* object-fit: cover; */
+
+
+/* box-shadow: 0px 4px 88px 21px rgba(2, 236, 255, 0.25);
+border-radius: 150px 0px;
+}
+
+#home>section{
+     border: 2px solid magenta; 
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 30px;
+ }
+#txt-call-Hey{
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 48px;
+    color: aliceblue;
+    } 
+
+#name{
+    color: white;
+    
+
+} */
+/* font-family: Inria Sans;
+font-size: 70px;
+font-weight: 700;
+line-height: 84px;
+letter-spacing: 0em;
+text-align: left; */ 
