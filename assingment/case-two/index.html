@@ -11,10 +11,22 @@
     <title>Css</title>
     <link href="assect/fontawesome-free-6.4.0-web/css/all.min.css" rel="stylesheet">
     <style>
+        /*header {*/
+        /*    !*border: solid;*!*/
+        /*    height: 75px;*/
+        /*    position: relative;*/
+        /*    background-color: darkgrey;*/
+        /*    box-shadow: 5px 5px 40px 1px darkgray;*/
+        /*}*/
+
         header {
             /*border: solid;*/
             height: 75px;
-            position: relative;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index:1;
             background-color: darkgrey;
             box-shadow: 5px 5px 40px 1px darkgray;
         }
@@ -25,6 +37,7 @@
             bottom: 0;
             margin: auto;
             margin-left: 30px;
+
         }
 
         header > ul > li {
@@ -119,6 +132,23 @@
             margin-bottom: 0;
             font-family: 'Roboto Mono', monospace;
         }
+        main>div:nth-child(6)>a{
+
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            z-index: 2;
+        }
+        main>div:nth-child(6)>a>img{
+            width: 80px;
+        }
+        main>section:nth-child(1)>ul{
+            margin-top: 200px;
+        }
+        main>section:nth-child(1){
+            position: fixed;
+        }
+
 
     </style>
 
@@ -186,6 +216,10 @@
             for you to grasp. With the information and guidance for your future career and a variety of course programs
             for you to achieve your ultimate goal of becoming a software engineer, the January, 2020 release of “Future
             Mirror” is now available</p>
+    </div>
+    <div>
+<!--        <img  src="assect/image/call+chat+communication+message+messages+whatsapp+icon-1320085878719849976.png"  >-->
+        <a href="https://wa.me/<0770659786>"  target="_blank" > <img src="assect/image/call+chat+communication+message+messages+whatsapp+icon-1320085878719849976.png"> </a>
     </div>
 
 
