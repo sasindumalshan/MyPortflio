@@ -1,0 +1,96 @@
+main > section:nth-child(3) {
+    height: 100vh;
+    width: auto;
+    background: linear-gradient(180deg, #2B333C 0%, #191E23 100%);
+    position: relative;
+}
+
+main > section:nth-child(3) > h2 {
+    color: #eeeeee;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 40px;
+
+    position: absolute;
+    top: 5%;
+
+    /*margin-top: 40px;*/
+    margin-left: 90px;
+    text-decoration: underline;
+}
+
+main > section:nth-child(3) > section:nth-child(2) {
+    height: 90px;
+    width: 630px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 60px;
+    /*border: solid 1px #eeeeee;*/
+
+    position: absolute;
+    top: 30%;
+    left: 9%;
+
+}
+
+main > section:nth-child(3) > section:nth-child(2) > div {
+    /*border: solid 1px #eeeeee;*/
+    position: relative;
+    height: auto;
+    width: auto;
+}
+
+main > section:nth-child(3) > section:nth-child(2) > div > img {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    /*right: 0;*/
+    left: 0;
+    margin: auto;
+    height: 60px;
+}
+
+main > section:nth-child(3) > section:nth-child(3) {
+    height: 90px;
+    width: 630px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 60px;
+    /*border: solid 1px #eeeeee;*/
+
+    position: absolute;
+    top: 45%;
+    left: 9%;
+
+}
+
+main > section:nth-child(3) > section:nth-child(3) > div {
+    /*border: solid 1px #eeeeee;*/
+    position: relative;
+    height: auto;
+    width: auto;
+}
+
+main > section:nth-child(3) > section:nth-child(3) > div > img {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    /*right: 0;*/
+    left: 0;
+    margin: auto;
+    height: 60px;
+}
+
+main > section:nth-child(3) > article {
+    color: #eeeeee;
+    font-family: 'Roboto Mono', monospace;
+
+    position: absolute;
+    position: absolute;
+    top: 60%;
+    left: 9%;
+
+}
+
+

@@ -1,0 +1,64 @@
+main>section{
+
+}
+
+main{
+    position: relative;
+}
+
+main>section:nth-child(1){
+    background-color: #191E23;
+    height: 100vh;
+    position: relative;
+    /*border: solid 2px #eeeeee;*/
+}
+main>section:nth-child(1)>aside {
+
+}
+main>section:nth-child(1)>aside>img{
+    height: 400px;
+    border-radius: 0px 80px ;
+    box-shadow: 0px 4px 88px 21px rgba(2, 236, 255, 0.25);
+    border-radius: 150px 0px;
+    position: absolute;
+    right: 8%;
+    top:30%;
+}
+main>section:nth-child(1)>section{
+    position: absolute;
+    top: 40%;
+    left: 6%;
+}
+main>section:nth-child(1)>section>h1{
+    color: #eeeeee;
+    font-family: 'Roboto Mono', monospace;
+    /*position: absolute;*/
+}
+
+main>section:nth-child(1)>section>h1:nth-child(1){
+    top: 17%;
+    font-size:70px;
+
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Ysabeau', sans-serif;
+    left: 10%;
+}
+
+main>section:nth-child(1)>section>h2:nth-child(2){
+
+
+    color: #eeeeee;
+    top: 25%;
+    font-size:72px;
+    /*font-size: 100%;*/
+    font-family: 'Roboto Mono', monospace;
+    left: 10%;
+}
+
+main>section:nth-child(1)>section>h1:nth-child(3){
+    color: #02ECFF;
+    top: 25%;
+    font-size:50px;
+    font-family: 'Roboto Mono', monospace;
+    left: 10%;
+}

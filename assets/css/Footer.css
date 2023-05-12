@@ -1,0 +1,85 @@
+footer{
+    height: calc(100vh/3);
+    width:auto;
+    position: relative;
+    background:linear-gradient(180deg, #2B343C 0%, #1A1F25 58.65%);
+}
+footer>div:nth-child(2){
+    position: absolute;
+   left:15%;
+    top: 30%;
+    width: 80%;
+}
+footer>div>h1{
+    font-family: 'Ysabeau', sans-serif;
+    color: #eeeeee;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+footer > h1:nth-child(1){
+    color: #eeeeee;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 40px;
+
+    position: absolute;
+    top: 5%;
+
+    /*margin-top: 40px;*/
+    margin-left: 200px;
+    text-decoration: underline;
+}
+
+footer>div> h1{
+margin-right: 5%;
+}
+footer>div>h1>i{
+    margin-right: 23%;
+}
+footer>div>h1:nth-child(1)>i:nth-child(1){
+    margin-right: 5%;
+}
+
+footer>div>h1:nth-child(1)>i:nth-child(2){
+    margin-right: 14%;
+}
+footer>div:nth-child(3)>i{
+    font-size: 30px;
+    margin-right: 10%;
+    color: #02ECFF;
+
+}
+
+footer>div:nth-child(3){
+    position: absolute;
+    top: 85%;
+    left: 35%;
+    width: 50%;
+}
+body > section:nth-child(4)>div{
+
+    color: #eeeeee;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    margin: auto;
+   // border: solid;
+    height: 20px;
+
+
+
+}
+body > section:nth-child(4){
+    position: relative;
+}
+body > section:nth-child(4)>div>small>p{
+    text-align: center;
+}
+
+body > section:nth-child(4){
+    color: #eeeeee;
+    height: 50px;
+    width: auto;
+    background-color: #0C0E10;
+}
