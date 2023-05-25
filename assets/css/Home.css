@@ -6,6 +6,10 @@ main{
     position: relative;
 }
 
+.home-icon > img{
+    height: 60px;
+}
+
 main>section:nth-child(1){
     background-color: #191E23;
     height: 100vh;

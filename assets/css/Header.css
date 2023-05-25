@@ -21,7 +21,8 @@ header>nav>a{
     text-decoration:none;
     margin-left: 3%;
     /*font-size: 23px;*/
-    font-size: calc( 1px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+    /*font-size: calc( 1px + (24 - 16) * (100vw - 400px) / (800 - 400) );*/
+    font-size: 25px;
     font-family: 'Roboto Mono', monospace;
     /*border: solid  ;*/
 

@@ -31,12 +31,13 @@
     <link href="assets/css/Skills.css" rel="stylesheet">
     <link href="assets/css/Project.css" rel="stylesheet">
     <link href="assets/css/Footer.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link href="assets/fontawesome-free-6.4.0-web/css/all.min.css" rel="stylesheet">
 
-<!--    <link href="assets/fontawesome-free-6.4.0-web/css/all.min.css" rel="stylesheet">-->
+    <!--    <link href="assets/fontawesome-free-6.4.0-web/css/all.min.css" rel="stylesheet">-->
     <!--    <link href="assets/css/MyCss.css" rel="stylesheet">-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@300&display=swap" rel="stylesheet">
 
     <!-- Mandatory Scripts
@@ -57,6 +58,14 @@
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <!--   <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+   -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 
 </head>
 <!-- Sectioning root ======================================================= -->
@@ -86,18 +95,18 @@
             <h2 class="tracking-in-expand">I'm Sasindu Malshan</h2>
             <h1 class="text-flicker-out-glow">And I'm Fullstack Developer</h1>
 
-            <div>
-                <img class="rotate-scale-up" alt="FaceBook Logo" height="60" src="assets/image/Icon/icons8-facebook-90.png">
-                <img class="rotate-scale-up" alt="Instagram" height="60" src="assets/image/Icon/icons8-instagram-90.png">
-                <img class="rotate-scale-up" alt="Twitter Logo" height="60" src="assets/image/Icon/icons8-twitter-90.png">
-                <img class="rotate-scale-up" alt="Whatsapp Logo" height="60" src="assets/image/Icon/icons8-whatsapp-90.png">
+            <div class="home-icon">
+                <img alt="FaceBook Logo" class="rotate-scale-up" src="assets/image/Icon/icons8-facebook-90.png">
+                <img alt="Instagram" class="rotate-scale-up" src="assets/image/Icon/icons8-instagram-90.png">
+                <img alt="Twitter Logo" class="rotate-scale-up" src="assets/image/Icon/icons8-twitter-90.png">
+                <img alt="Whatsapp Logo" class="rotate-scale-up" src="assets/image/Icon/icons8-whatsapp-90.png">
 
             </div>
 
 
         </section>
         <aside>
-            <img class="slide-right " alt="Profile image" src="assets/image/profile.png"
+            <img alt="Profile image" class="slide-right " src="assets/image/profile.png"
                  usemap="#map">
             <map id="boder" name="map">
                 <area coords="10,10,150" href="https://google.com" shape="circle" target="_blank">
@@ -105,14 +114,14 @@
 
         </aside>
         <section>
-            <i   class="fa-brands fa-github-alt slide-top " ></i>
+            <i class="fa-brands fa-github-alt slide-top "></i>
             <i class="fa-brands fa-facebook slide-top-2 "></i>
             <i class="fa-solid fa-face-smile slide-top-4"></i>
             <i class="fa-brands fa-figma slide-top-3"></i>
 
         </section>
 
-        <div class="area" >
+        <div class="area">
             <ul class="circles">
                 <li></li>
                 <li></li>
@@ -125,13 +134,13 @@
                 <li></li>
                 <li></li>
             </ul>
-        </div >
+        </div>
 
     </section>
     <!-- =============================About me==================== -->
     <section>
         <h2>About Me</h2>
-        <section>
+        <section class="aboutMe-details">
 
             <h1><i class="fa-solid fa-tag"></i>J.K.Sasindu Malshan</h1>
             <h1><i class="fa-solid fa-location-dot"></i>Addarawaththa,Elabada<br>
@@ -160,27 +169,80 @@
     </section>
     <!-- =============================Skills==================== -->
     <section>
-        <h2>My Skills</h2>
-        <section>
-            <div><img alt="icon" src="assets/image/Icon/css3-logo-png-transparent.png"></div>
-            <div><img alt="icon" src="assets/image/Icon/Dart_logo.png"></div>
-            <div><img alt="icon" src="assets/image/Icon/HTML5_logo_and_wordmark.svg.png"></div>
-            <div><img alt="icon"
-                      src="assets/image/Icon/javascript-logo-transparent-logo-javascript-images-3.png"></div>
+        <h2 class="Text my-skill-text">MY SKILLS</h2>
+        <!-- <section>
+             <div><img alt="icon" src="assets/image/Icon/css3-logo-png-transparent.png"></div>
+             <div><img alt="icon" src="assets/image/Icon/Dart_logo.png"></div>
+             <div><img alt="icon" src="assets/image/Icon/HTML5_logo_and_wordmark.svg.png"></div>
+            <div><img alt="icon" src="assets/image/Icon/javascript-logo-transparent-logo-javascript-images-3.png"></div>
+            <div><img alt="icon" src="assets/image/Icon/logo-mysql-mysql-logo-png-images-are-download-crazypng-21.png"></div>
+         </section>-->
+        <!--  <section>
+              <div><img alt="icon" height="30px" src="assets/image/Icon/React-icon.svg.png"></div>
+              <div><img alt="icon" height="30px" src="assets/image/Icon/Google-flutter-logo.png"></div>
+
+
+          </section>-->
+
+        <section class="wrap-box">
             <div>
-                <img alt="icon"
-                     src="assets/image/Icon/logo-mysql-mysql-logo-png-images-are-download-crazypng-21.png"></div>
-
-
+                <div class="skill">
+                    <img alt="icon" src="assets/image/Icon/css3-logo-png-transparent.png" width="30px">
+                    <p>CSS</p>
+                    <div class="skill-bar skill1">
+                        <span class="skill-count1">80%</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="skill">
+                    <img alt="icon" src="assets/image/Icon/Dart_logo.png" width="30px">
+                    <p>Dart</p>
+                    <div class="skill-bar skill3">
+                        <span class="skill-count1">0.1%</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="skill">
+                    <img alt="icon" src="assets/image/Icon/HTML5_logo_and_wordmark.svg.png" width="30px">
+                    <p>HTML5</p>
+                    <div class="skill-bar skill2">
+                        <span class="skill-count1">80%</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="skill">
+                    <img alt="icon"  src="assets/image/Icon/logo-mysql-mysql-logo-png-images-are-download-crazypng-21.png" width="30px">
+                    <p>MY SQL</p>
+                    <div class="skill-bar skill4">
+                        <span class="skill-count1">90%</span>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
-            <div><img alt="icon" height="30px" src="assets/image/Icon/React-icon.svg.png"></div>
-            <div><img alt="icon" height="30px" src="assets/image/Icon/Google-flutter-logo.png"></div>
-
-
+        <section class="wrap-box2">
+            <div>
+                <div class="skill">
+                    <img alt="icon" src="assets/image/Icon/React-icon.svg.png" width="30px">
+                    <p>React</p>
+                    <div class="skill-bar skill5">
+                        <span class="skill-count1">0.1%</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="skill">
+                    <img alt="icon" src="assets/image/Icon/Google-flutter-logo.png" width="90px">
+                    <p id="flutter">FLUTTER</p>
+                    <div class="skill-bar skill7">
+                        <span class="skill-count1">0.1%</span>
+                    </div>
+                </div>
+            </div>
         </section>
-
-        <article>
+        <article class="article-skills">
             <p>Although I took Java as my main language, I learned another language on my own. I prefer to learn by
                 myself</p>
         </article>
@@ -198,13 +260,13 @@
                 <h1>0</h1>
             </div>
             <div>
-            <h1>Complete project</h1>
+                <h1>Complete project</h1>
 
-            <h1><i  class="fa-solid fa-desktop"></i>Desktop Aplication</h1>
+                <h1><i class="fa-solid fa-desktop"></i>Desktop Aplication</h1>
 
-            <h1><i class="fa-solid fa-code"></i>Website</h1>
+                <h1><i class="fa-solid fa-code"></i>Website</h1>
 
-            <h1><i class="fa-solid fa-mobile"></i>Mobile Aplication</h1>
+                <h1><i class="fa-solid fa-mobile"></i>Mobile Aplication</h1>
             </div>
 
             <article>
@@ -241,14 +303,14 @@
         <i class="fa-brands fa-instagram"></i>
 
     </div>
-    <div >
+    <div>
         <small>
-<!--            <p>AllRight Receive 2023|Sasindu Malshan</p>-->
+            <!--            <p>AllRight Receive 2023|Sasindu Malshan</p>-->
         </small>
     </div>
 </footer>
 <section>
-    <div >
+    <div>
         <small>
             <p>AllRight Receive 2023|Sasindu Malshan</p>
         </small>

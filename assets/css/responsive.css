@@ -1,0 +1,92 @@
+/*
+
+
+*/
+
+@media (max-width: 320px) {
+    /*Home  ====================================================================*/
+    main>section:nth-child(1)>aside>img {
+        height: 293px;
+        right: 10%;
+        top: 13%;
+    }
+    main>section:nth-child(1)>section:nth-child(3)>i {
+        font-size: 25px;
+    }
+    main>section:nth-child(1)>section:nth-child(3) {
+        left: 13%;
+        top: 8%;
+        height: 424px;
+        width: 246px;
+
+    }
+
+    main>section:nth-child(1)>section>h1:nth-child(1) {
+        top: 9%;
+        font-size: 27px;
+    }
+    main>section:nth-child(1)>section>h2:nth-child(2) {
+        font-size: 23px;
+
+    }
+    main>section:nth-child(1)>section {
+        top: 52%;
+
+    }
+    main>section:nth-child(1)>section>h1:nth-child(3) {
+        font-size: 17px;
+        margin-top: 5px;
+
+    }
+    .home-icon > img{
+        height: 21px;
+        margin-top: 10px;
+    }
+
+    /*header ========================================================================*/
+
+    header{
+        height: 4%;
+
+    }
+    header>nav>a{
+        font-size: 12px;
+    }
+    header>nav{
+       margin-left: 0;
+    }
+
+/*    about me ===========================================*/
+    .aboutMe-details{
+        font-size: 15px;
+    }
+    main>section:nth-child(2)>h2 {
+        font-size: 25px;
+        margin-left: 20px;
+    }
+    main>section:nth-child(2)>section {
+        top: 50%;
+        left: 4%;
+    }
+    main>section:nth-child(2)>section>h1 {
+        font-size: 12px;
+        margin-top: 21px;
+    }
+    main>section:nth-child(2)>section>h1>i {
+        margin-right: 20px;
+    }
+
+    main>section>aside>h1 {
+        font-size: 12px;
+    }
+    main>section>aside>h1>i {
+        margin-right: 18px;
+    }
+    main>section>aside>h1 {
+        right: 25%;
+        top: 29%;
+    }
+    main>section>aside{
+        left: 4%;
+    }
+}
