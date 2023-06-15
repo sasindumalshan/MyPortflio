@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case Three</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <style>
+    section > div{
+      height: 60px;
+      width: 300px;
+      background-color: #6f42c1;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      color: #d1e7dd;
+      font-family: 'Roboto', sans-serif;
+      font-size: 12px;
+      padding: 5px;
+    }
+    section > div >h1{
+      text-align: right;
+
+    }
+    section > div >h1 > i{
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    section{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      height: 60vh;
+      width: 40vw;
+    }
+    section > div:nth-child(1){
+      position: absolute;
+      left: -250px;
+    }
+    section > div:nth-child(1):hover{
+      animation: show 2s;
+      animation-iteration-count: inherit;
+      background-color: #a372ff;
+    }
+
+
+    section > div:nth-child(2){
+      position: absolute;
+      top: 80px;
+      left: -250px;
+    }
+    section > div:nth-child(2):hover{
+      animation: show 2s;
+      animation-iteration-count: inherit;
+      background-color: #a372ff;
+    }
+    section > div:nth-child(3){
+      position: absolute;
+      top: 160px;
+      left: -250px;
+    }
+    section > div:nth-child(3):hover{
+      animation: show 2s;
+      animation-iteration-count: inherit;
+      background-color: #a372ff;
+    }
+    section > div:nth-child(4){
+      position: absolute;
+      top: 240px;
+      left: -250px;
+    }
+    section > div:nth-child(4):hover{
+      animation: show 2s;
+      animation-iteration-count: inherit;
+      background-color: #a372ff;
+    }
+    section > div:nth-child(5){
+      position: absolute;
+      top: 320px;
+      left: -250px;
+    }
+    section > div:nth-child(5):hover{
+      animation: show 2s;
+      animation-iteration-count: inherit;
+      background-color: #a372ff;
+    }
+
+    @keyframes show {
+      from{
+        left: -250px;
+      }
+
+      50%{
+        left: 0px;
+      }
+      to{
+        left: -250px;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="../../../assets/fontawesome-free-6.4.0-web/css/all.css">
+</head>
+<body>
+<section>
+  <div>
+    <h1>Menu One <i class="fa-brands fa-mendeley"></i></h1>
+  </div>
+  <div>
+    <h1>Menu Two <i class="fa-brands fa-mendeley"></i></h1>
+  </div>
+  <div>
+    <h1>Menu Three <i class="fa-brands fa-mendeley"></i></h1>
+  </div>
+  <div>
+    <h1>Menu Four <i class="fa-brands fa-mendeley"></i></h1>
+  </div>
+  <div>
+    <h1>Menu Five <i class="fa-brands fa-mendeley"></i></h1>
+  </div>
+</section>
+</body>
+</html>
