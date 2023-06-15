@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KITT</title>
+    <style>
+        section:nth-child(1) {
+            height: 85px;
+            width: 700px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        div {
+            width: 700px;
+        }
+
+        section > div:nth-child(4) {
+            position: absolute;
+            bottom: 0;
+            border: solid 1px #d1e7dd;
+        }
+
+        section > div:nth-child(2) {
+            border: solid 1px #d1e7dd;
+        }
+
+        #bg {
+            background-color: #2c3034;
+        }
+
+
+    </style>
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+</head>
+<body id="bg">
+
+<section class="">
+    <h6 class="text-white text-center">KITT</h6>
+    <div></div>
+    <section class="container mt-2">
+        <div class="row">
+            <div class="col">
+                <div id="box1" style="height: 35px;width: 70px; background-color: #d1e7dd;border-radius: 10px"></div>
+            </div>
+            <div class="col">
+                <div id="box2" style="height: 35px;width: 70px; background-color: #d1e7dd;border-radius: 10px"></div>
+            </div>
+            <div class="col">
+                <div id="box3" style="height: 35px;width: 70px; background-color: #d1e7dd;border-radius: 10px"></div>
+            </div>
+            <div class="col">
+                <div id="box4" style="height: 35px;width: 70px; background-color: #d1e7dd;border-radius: 10px"></div>
+            </div>
+            <div class="col">
+                <div id="box5" style="height: 35px;width: 70px; background-color: #d1e7dd;border-radius: 10px"></div>
+            </div>
+            <div class="col">
+                <div id="box6" style="height: 35px;width: 70px; background-color: #d1e7dd;border-radius: 10px"></div>
+            </div>
+            <div class="col">
+                <div id="box7" style="height: 35px;width: 70px; background-color: #d1e7dd;border-radius: 10px"></div>
+            </div>
+
+        </div>
+
+    </section>
+    <div></div>
+        <div style="position: absolute;left: 0;right: 0; margin: auto;width: 125px" >
+            <button id="start" type="button" class="btn btn-outline-info mt-4">Start</button>
+            <button id="stop" type="button" class="btn btn-outline-light  mt-4">Stop</button>
+        </div>
+
+</section>
+<script src="assest/jquery-3.7.0.min.js"></script>
+<script>
+    var id=['#box1','#box2','#box3','#box4','#box5','#box6','#box7']
+    let i=0;
+    var c=true;
+
+    function setWhite() {
+        $('#box1').css("background-color","#d1e7dd")
+        $('#box2').css("background-color","#d1e7dd")
+        $('#box3').css("background-color","#d1e7dd")
+        $('#box4').css("background-color","#d1e7dd")
+        $('#box5').css("background-color","#d1e7dd")
+        $('#box6').css("background-color","#d1e7dd")
+        $('#box7').css("background-color","#d1e7dd")
+    }
+
+    function func(){
+        if(c){
+            setWhite();
+                $(id[i]).css("background-color", "#33bbd4")
+                $(id[i + 1]).css("background-color", "#5e9afc")
+                i++;
+                c=i==6?false:true;
+        }else {
+            setWhite();
+            $(id[i]).css("background-color", "#5efcaa")
+            $(id[--i ]).css("background-color", "#7fe87c")
+            c=i==0?true:false;
+        }
+    }
+    let interval=setInterval(func,100) ;
+
+    $('#stop').click(function () {
+        clearTimeout(interval);
+    });
+
+    $('#start').click(function () {
+        interval=setInterval(func,100);
+    });
+
+</script>
+</body>
+</html>
