@@ -114,6 +114,7 @@
     });
 
     $('#start').click(function () {
+        clearTimeout(interval);
         interval=setInterval(func,100);
     });
 
