@@ -1,0 +1,44 @@
+.dashBord-button{
+width: 285px;
+    background-color: #2b3035;
+    color: white;
+    border: transparent;
+    text-align: left;
+
+
+}
+.dashBord-button:hover{
+    background-color: white;
+    color: #2b3035;
+}
+.nav-dash{
+    background-color: #2b3035;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#bg-img{
+    height: 500px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#image-Welcome{
+    position: absolute;
+    right: 15%;
+    width: 10%;
+
+}
+.ml{
+    margin-left: 3rem;
+}
+.bg-green{
+    background-color: #b7ffda;
+}
+
+
+
+
+/*=============================================*/
