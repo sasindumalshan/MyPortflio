@@ -46,11 +46,85 @@ var cust=[];
 var items=[];
 
 function setPropety() {
-    $('#myCustomerTable>tbody>tr>td').click(function () {
+    $('#myCustomerTable>tbody>tr').click(function () {
 
+        let id=$(this).children().eq(1).text();
+        let fastName=$(this).children().eq(1).text();
+        let lastName=$(this).children().eq(2).text();
+        let Address=$(this).children().eq(3).text();
+        let Contact=$(this).children().eq(4).text();
+        let mail=$(this).children().eq(5).text();
 
+        $("#FName").val(fastName);
+        $("#LName").val(lastName);
+        $("#Address").val(Address);
+        $("#Gmail").val(mail);
+        $("#ContactNumber").val(Contact);
 
     })
+}
+
+function clearCustomerInput() {
+    $('#FName').val("");
+    $('#LName').val("");
+    $('#Address').val("");
+    $('#Gmail').val("");
+    $('#ContactNumber').val("");
+}
+
+$('#NewCustRemov').click(function () {
+
+    for (let i = 0; i <cust.length; i++) {
+        if ($('#FName').val()==cust[i].getFistName()){
+            cust.splice(cust.indexOf(cust[i]),1);
+        }
+    }
+    $('#myCustomerTable>tbody>tr').remove();
+    for (var customer of cust) {
+        $('#myCustomerTable').append('<tr>' +
+            '<td><b>0</td>' +
+            '<td>'+customer.getFistName()+'</td>' +
+            '<td>'+customer.getLastName()+'</td>' +
+            '<td>'+customer.getAddress()+'</td>' +
+            '<td>'+customer.getContact()+'</td>' +
+            '<td>'+customer.getEmail()+'</td>' +
+            '</tr>');
+    }
+
+    clearCustomerInput();
+});
+
+$('#NewCustUpdate').click(function () {
+
+    for (let i = 0; i <cust.length; i++) {
+        if ($('#FName').val()==cust[i].getFistName()){
+            cust[i].setFistName($("#FName").val());
+            cust[i].setLastName($("#LName").val());
+            cust[i].setAddress($("#Address").val());
+            cust[i].setEmail($("#Gmail").val());
+            cust[i].setContact($("#ContactNumber").val());
+        }
+    }
+    $('#myCustomerTable>tbody>tr').remove();
+    for (var customer of cust) {
+        $('#myCustomerTable').append('<tr>' +
+            '<td><b>0</td>' +
+            '<td>'+customer.getFistName()+'</td>' +
+            '<td>'+customer.getLastName()+'</td>' +
+            '<td>'+customer.getAddress()+'</td>' +
+            '<td>'+customer.getContact()+'</td>' +
+            '<td>'+customer.getEmail()+'</td>' +
+            '</tr>');
+    }
+
+    clearCustomerInput();
+    setPropety();
+
+
+});
+
+function customerCount() {
+    $('#AllCustomer').text("+ "+cust.length);
 }
 
 $('#NewCustAdd').click(function () {
@@ -69,14 +143,15 @@ $('#NewCustAdd').click(function () {
         '<td>'+customer.getLastName()+'</td>' +
         '<td>'+customer.getAddress()+'</td>' +
         '<td>'+customer.getContact()+'</td>' +
-        '<td>'+customer.getEmail()+'</td>' +
+        '<td>'+customer.getEmail()+"@gmail.com"+'</td>' +
         '</tr>');
-    $('#FName').val("");
+   /* $('#FName').val("");
     $('#LName').val("");
     $('#Address').val("");
     $('#Gmail').val("");
-    $('#ContactNumber').val("");
-
+    $('#ContactNumber').val("");*/
+    clearCustomerInput();
+    customerCount();
     setPropety();
 
 });
