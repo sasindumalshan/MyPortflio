@@ -127,6 +127,18 @@ function customerCount() {
     $('#AllCustomer').text("+ "+cust.length);
 }
 
+$('#FName').keydown(function (e) {
+    const reg=/^[a-zA-Z-'`]+[ a-zA-Z-'`]$/;
+    $('#FName').css('color',"black");
+    if (e.key=="Enter" && reg.test($('#FName').val())){
+        $('#FName').css('color',"black")
+        $('#LName').focus();
+    }else {
+        $('#FName').css('color',"red");
+    }
+});
+
+
 $('#NewCustAdd').click(function () {
     var customer=new Customer();
     customer.setFistName($('#FName').val());

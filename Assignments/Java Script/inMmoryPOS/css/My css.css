@@ -46,3 +46,7 @@ width: 285px;
 #myCustomerTable>tbody>tr>td:hover{
 background-color: #02ECFF;
 }*/
+
+.text-color{
+    color: #2b3035;
+}
