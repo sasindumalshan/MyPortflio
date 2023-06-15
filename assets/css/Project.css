@@ -2,83 +2,129 @@ main > section:nth-child(4) {
     width: auto;
     height: 100vh;
     position: relative;
-    background: linear-gradient(180deg, #1A1F25 0%, #2B343C 100%);
+    background: linear-gradient(180deg, #191E23 0%, rgba(4, 164, 167, 0.04) 100%);
 }
 
 main > section:nth-child(4) > h3 {
     color: #eeeeee;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Righteous', cursive;
     font-size: 40px;
+    text-align: center;
+    margin-top: 3rem;
+}
+.box{
+    /*border: solid white 1px;*/
+    height: 375px;
+    width: 350px;
+    /*background-color: #2b3035;*/
+    border-radius: 10px;
+    padding: 20px;
+    background: linear-gradient(180deg, #2b3035 0%, rgba(0, 251, 255, 0.01) 100%);
+    display: inline-block;
+    margin: 30px;
+}
+.box:hover{
+    background: linear-gradient(180deg, #2b3035 0%, rgba(0, 251, 255, 0.27) 100%);
+}
+.h1-txt{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    /*margin-top: 1rem;*/
+    margin-bottom: 1rem;
+}
 
+#service-contener{
+    /*border: solid 1px white;*/
+    margin-top: 65px;
+    width: 65vw;
     position: absolute;
-    top: 5%;
-
-    /*margin-top: 40px;*/
-    margin-left: 200px;
-    text-decoration: underline;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#git-icon{
+    font-size: 60px;
+    color: #02ECFF;
+}
+#A-sec{
+margin-top: 70px;
+}
+.btn{
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    border-color: transparent;
+    background-color: #02ECFF;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.btn:hover{
+    border-color: #02ECFF;
+    background-color: transparent;
+    color: #02ECFF;
 }
 
-
-main > section:nth-child(4) > section:nth-child(2) > div > h1 {
-    color: #eeeeee;
-    font-family: 'Roboto Mono', monospace;
+.assingmet-section{
+    margin-top: 70px;
+    /*border:  solid 1px white;*/
 }
-
-main > section:nth-child(4) > section:nth-child(2) {
+#get{
     position: absolute;
-    top: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
-main > section:nth-child(4) > section:nth-child(2) > div:nth-child(1) {
-    position: absolute;
-    left: 70%;
-    left: 70%;
-    top: 65px;
-}
-main > section:nth-child(4) > section:nth-child(2) > div:nth-child(1)>h1{
-    margin-bottom: 20px;
-}
-main > section:nth-child(4) > section:nth-child(2) > div:nth-child(2) {
-    position: absolute;
-    left: 15%;
-}
-
-main > section:nth-child(4) > section:nth-child(2) > div:nth-child(2) > h1:nth-child(1) {
-    margin-bottom: 40px;
-}
-
-main > section:nth-child(4) > section:nth-child(2) > div:nth-child(2) > h1 {
-    margin-bottom: 20px;
-}
-
-main > section:nth-child(4) > section:nth-child(2) > div:nth-child(2) > h1 >i{
-    margin-right: 51px;
-}
-main > section:nth-child(4) > section:nth-child(2) >  article>p{
-    color: #eeeeee;
-    font-family: 'Ysabeau', sans-serif;
+.h1-ass{
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
 }
-main > section:nth-child(4) > section:nth-child(2){
-    position: relative;
-    /*border: solid #eeeeee;*/
-    height: 80%;
-    width: auto;
-}
-main > section:nth-child(4) > section:nth-child(2) >article{
-    position: absolute;
-    top: 50%;
-    /*border: solid 1px #eeeeee;*/
-    width: 45%;
+
+
+/*==========================================================================*/
+
+#popup-window{
+    height: 80vh;
+    width: 80vw;
+    /*border: solid white 1px;*/
+
+    background: linear-gradient(180deg, #191E23 100%, rgba(4, 164, 167, 0.04) 100%);
+    position: fixed;
+    top: 10%;
     left: 10%;
+    border-radius: 15px;
+    box-shadow: 0 5px 30px rgba(16, 206, 206, 0.43);
+
+    padding: 40px;
+    transition: 0.5S;
+
+
+    visibility: hidden;
+    z-index: 2;
 }
 
-main > section:nth-child(4) > section:nth-child(2) >div>i{
-    position: absolute;
-    left: 60%;
-    top: 52%;
-    /*border: solid ;*/
-    color: #02ECFF;
-    font-size: 50px;
+.box-assiment{
+    height: 70px;
+    width: 90px;
+    /*background-color: #2b3035;*/
+    border-radius: 10px;
+    padding: 10px;
+    background: linear-gradient(180deg, #2b3035 0%, rgba(69, 137, 139, 0.44) 100%);
+    display: inline-block;
+    margin: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.box-assiment:hover{
+    background: linear-gradient(180deg, #2b3035 0%, rgba(0, 251, 255, 0.27) 100%);
+}
 
+#close{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
