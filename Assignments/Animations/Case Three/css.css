@@ -1,0 +1,50 @@
+body{
+    background-color: #ffffff;
+}
+
+section{
+    width: 80px;
+    height: 150px;
+    background-color: blue;
+    position: relative;
+    border-radius: 10px;
+    animation-name: case;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1s;
+}
+
+@keyframes case {
+    0%{
+        left: 20px;
+        top: 20px;
+        background-color: blue;
+        /*transform: rotate(90deg);*/
+
+    }
+    25%{
+        left: 90vw;
+        top: 20px;
+        background-color: yellow;
+        transform: rotate(90deg);
+    }
+    50%{
+        left: 90vW;
+        top: 80vh;
+        background-color: red;
+        transform: rotate(270deg);
+    }
+    75%{
+        left: 20px;
+        top: 80vh;
+        background-color: deeppink;
+        transform: rotate(-90deg);
+    }
+    to{
+        left: 20px;
+        top: 20px;
+        background-color: orange;
+        transform: rotate(-270deg);
+    }
+}
