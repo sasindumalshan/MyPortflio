@@ -70,6 +70,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/MyClass.css">
 
 </head>
 <!-- Sectioning root ======================================================= -->
@@ -142,29 +143,44 @@
 
     </section>
     <!-- =============================About me==================== -->
-    <section>
-        <h2>About Me</h2>
-        <section class="aboutMe-details">
+    <section id="about-me">
 
-            <h1><i class="fa-solid fa-tag"></i>J.K.Sasindu Malshan</h1>
-            <h1><i class="fa-solid fa-location-dot"></i>Addarawaththa,Elabada<br>
-                <span>Gitota<br></span>
-                <span> galle<br></span>
-                <span>Sri Lanka</span>
-            </h1>
-            <h1><i class="fa-solid fa-cake-candles"></i>26 March</h1>
-            <h1><i class="fa-solid fa-baby-carriage"></i>21 Years old</h1>
-        </section>
-        <aside>
-            <h1><i class="fa-solid fa-school"></i>G/Gintota Secondary School</h1>
-            <h1><i class="fa-solid fa-school"></i>Dr.Richerd pathirana College</h1>
-            <h1><i class="fa-solid fa-graduation-cap"></i>Institute of JAVA Software Engineer [ IJES ]</h1>
+        <h2 class="text-content">About Me</h2>
+        <div class="box-details">
+            <img id="img-devil-logo" src="assets/image/My%20logo%20Black%20Background.png">
+            <div id="box-details-logo-box" class="h1-txt">
+                <i  class="fa-brands fa-facebook m"></i>
+                <i class="fa-brands fa-youtube m"></i>
+            </div>
+            <section>
+
+                <h1 class="m-b-2 text-h"><i class="fa-solid fa-tag m-r"></i>J.K.Sasindu Malshan</h1>
+                <h1 class="m-b-2 text-h"> <i class="fa-solid fa-location-dot m-r"></i>Addarawaththa,Elabada<br>
+                    <span class="m-b-1 text-h m-l">Gitota<br></span>
+                    <span class="m-b-1 text-h m-l"> galle<br></span>
+                    <span class="m-b-1 text-h m-l">Sri Lanka</span>
+                </h1 >
+                <h1 class="m-b-2 text-h"><i class="fa-solid fa-cake-candles m-r"></i>26 March</h1>
+                <h1 class="text-h"><i class="fa-solid fa-baby-carriage m-r"></i>21 Years old</h1>
+            </section>
+
+        </div>
+
+        <aside >
+            <img src="assets/image/Icon/education-haf.png">
+            <hr/>
+            <div id="school">
+                <h1 class="text-h txt-b m-b-2"><i class="fa-solid fa-school m-r"></i>G/Gintota Secondary School</h1>
+                <h1 class="text-h txt-b m-b-2"><i class="fa-solid fa-school m-r"></i>Dr.Richerd pathirana College</h1>
+                <h1 class="text-h txt-b m-b-2"><i class="fa-solid fa-graduation-cap m-r"></i>Institute of JAVA Software Engineer [ IJES ]</h1>
+            </div>
+
             <article>
                 <p>I am Sasindu Malshan, I am still studying IJSE in the second semester and started my journey as a
                     software engineer in 2021 with IJSE. More information about me can be downloaded by clicking on
                     the download button.</p>
             </article>
-            <button onclick="window.open('https://drive.google.com/drive/u/0/my-drive')">
+            <button class="m" onclick="window.open('https://drive.google.com/drive/u/0/my-drive')">
                 Download
             </button>
         </aside>
@@ -172,8 +188,8 @@
 
     </section>
     <!-- =============================Skills==================== -->
-    <section>
-        <h2 class="Text my-skill-text">MY SKILLS</h2>
+    <section id="skill">
+        <h2  class="text-content">MY SKILLS</h2>
         <!-- <section>
              <div><img alt="icon" src="assets/image/Icon/css3-logo-png-transparent.png"></div>
              <div><img alt="icon" src="assets/image/Icon/Dart_logo.png"></div>
@@ -187,76 +203,82 @@
 
 
           </section>-->
+        <div>
+            <section class="wrap-box">
+                <div>
+                    <div class="skill">
+                        <img alt="icon" src="assets/image/Icon/css3-logo-png-transparent.png" width="30px">
+                        <p>CSS</p>
+                        <div class="skill-bar skill1">
+                            <span class="skill-count1">80%</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="skill">
+                        <img alt="icon" src="assets/image/Icon/Dart_logo.png" width="30px">
+                        <p>Dart</p>
+                        <div class="skill-bar skill3">
+                            <span class="skill-count1">0.1%</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="skill">
+                        <img alt="icon" src="assets/image/Icon/HTML5_logo_and_wordmark.svg.png" width="30px">
+                        <p>HTML5</p>
+                        <div class="skill-bar skill2">
+                            <span class="skill-count1">80%</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="skill">
+                        <img alt="icon"  src="assets/image/Icon/logo-mysql-mysql-logo-png-images-are-download-crazypng-21.png" width="30px">
+                        <p>MY SQL</p>
+                        <div class="skill-bar skill4">
+                            <span class="skill-count1">90%</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="wrap-box2">
+                <div>
+                    <div class="skill">
+                        <img alt="icon" src="assets/image/Icon/React-icon.svg.png" width="30px">
+                        <p>React</p>
+                        <div class="skill-bar skill5">
+                            <span class="skill-count1">0.1%</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="skill">
+                        <img alt="icon" src="assets/image/Icon/Google-flutter-logo.png" width="90px">
+                        <p id="flutter">FLUTTER</p>
+                        <div class="skill-bar skill7">
+                            <span class="skill-count1">0.1%</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div>
+            <article class="article-skills">
+                <p>Although I took Java as my main language, I learned another language on my own. I prefer to learn by
+                    myself</p>
+            </article>
+        </div>
 
-        <section class="wrap-box">
-            <div>
-                <div class="skill">
-                    <img alt="icon" src="assets/image/Icon/css3-logo-png-transparent.png" width="30px">
-                    <p>CSS</p>
-                    <div class="skill-bar skill1">
-                        <span class="skill-count1">80%</span>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="skill">
-                    <img alt="icon" src="assets/image/Icon/Dart_logo.png" width="30px">
-                    <p>Dart</p>
-                    <div class="skill-bar skill3">
-                        <span class="skill-count1">0.1%</span>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="skill">
-                    <img alt="icon" src="assets/image/Icon/HTML5_logo_and_wordmark.svg.png" width="30px">
-                    <p>HTML5</p>
-                    <div class="skill-bar skill2">
-                        <span class="skill-count1">80%</span>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="skill">
-                    <img alt="icon"  src="assets/image/Icon/logo-mysql-mysql-logo-png-images-are-download-crazypng-21.png" width="30px">
-                    <p>MY SQL</p>
-                    <div class="skill-bar skill4">
-                        <span class="skill-count1">90%</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="wrap-box2">
-            <div>
-                <div class="skill">
-                    <img alt="icon" src="assets/image/Icon/React-icon.svg.png" width="30px">
-                    <p>React</p>
-                    <div class="skill-bar skill5">
-                        <span class="skill-count1">0.1%</span>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="skill">
-                    <img alt="icon" src="assets/image/Icon/Google-flutter-logo.png" width="90px">
-                    <p id="flutter">FLUTTER</p>
-                    <div class="skill-bar skill7">
-                        <span class="skill-count1">0.1%</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <article class="article-skills">
-            <p>Although I took Java as my main language, I learned another language on my own. I prefer to learn by
-                myself</p>
-        </article>
+
+
     </section>
 
     <!-- =============================Project==================== -->
 
     <section>
 
-        <h3>MY Services</h3>
+        <h3 class="text-content">MY Services</h3>
 
         <section>
 

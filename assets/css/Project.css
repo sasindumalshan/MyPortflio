@@ -5,7 +5,7 @@ main > section:nth-child(4) {
     background: linear-gradient(180deg, #191E23 0%, rgba(4, 164, 167, 0.04) 100%);
 }
 
-main > section:nth-child(4) > h3 {
+.text-content{
     color: #eeeeee;
     font-family: 'Righteous', cursive;
     font-size: 40px;

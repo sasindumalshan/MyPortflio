@@ -57,9 +57,7 @@
     }
 
 /*    about me ===========================================*/
-    .aboutMe-details{
-        font-size: 15px;
-    }
+
     main>section:nth-child(2)>h2 {
         font-size: 25px;
         margin-left: 20px;
@@ -89,4 +87,7 @@
     main>section>aside{
         left: 4%;
     }
+
+/*    ================================================*/
+
 }

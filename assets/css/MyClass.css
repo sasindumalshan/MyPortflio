@@ -1,0 +1,24 @@
+.text-h{
+    color: #eeeeee;
+    font-family: "Oswald", Helvetica, Arial,sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+}
+.m-b-2{
+    margin-bottom: 2rem;
+}
+.m-b-1{
+    margin-bottom: 1rem;
+}
+.m{
+    margin: 1rem;
+}
+.m-r{
+    margin-right: 1rem;
+}
+.m-l{
+    margin-left: 2rem;
+}
+.txt-b{
+    font-weight: lighter;
+}
