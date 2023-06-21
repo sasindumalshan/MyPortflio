@@ -1,109 +1,33 @@
-main>section{
-
-}
-
-main{
+main {
     position: relative;
 }
 
-.home-icon > img{
-    height: 60px;
-}
-
-main>section:nth-child(1){
-    background-color: #191E23;
-    height: 100vh;
-    position: relative;
-    /*border: solid 2px #eeeeee;*/
-}
-main>section:nth-child(1) {
+.home-Container-col>section>i{
+    position: absolute;
 
 }
-main>section:nth-child(1)>section:nth-child(3)>i:nth-child(1){
+
+.home-Container-col>section>i:nth-child(1){
     position: absolute;
     top: 20%;
     left: 20%;
 }
-main>section:nth-child(1)>section:nth-child(3)>i:nth-child(2){
+.home-Container-col>section>i:nth-child(2){
     position: absolute;
     top: 40%;
     left: 0;
 }
-main>section:nth-child(1)>section:nth-child(3)>i:nth-child(3){
+.home-Container-col>section>i:nth-child(3){
     position: absolute;
     top: 20%;
     right: 0;
 }
 
-main>section:nth-child(1)>section:nth-child(3)>i:nth-child(4){
+.home-Container-col>section>i:nth-child(4){
     position: absolute;
     top: 70%;
     left: 5%;
 }
-main>section:nth-child(1)>section:nth-child(3)>i{
-    color: #02ECFF;
-    font-size: 50px;
-    /*text-shadow: 0px 0px 21px rgba(36, 232, 248, 0.5);*/
-}
-main>section:nth-child(1)>section:nth-child(3){
-    position: absolute;
-    left: 60%;
-    top:20%;
-    margin: auto;
-    height: 600px;
-    width: 600px;
-    /*border: solid ;*/
-}
-
-main>section:nth-child(1)>aside>img{
-    height: 700px;
-    /*border-radius: 0px 80px ;*/
-    /*box-shadow: 0px 4px 88px 21px rgba(2, 236, 255, 0.25);*/
-    /*border-radius: 150px 0px;*/
-    position: absolute;
-    right: 5%;
-    top:20%;
-}
-main>section:nth-child(1)>section{
-    position: absolute;
-    top: 40%;
-    left: 6%;
-}
-main>section:nth-child(1)>section>h1{
-    color: #eeeeee;
-    font-family: 'Roboto Mono', monospace;
-    /*position: absolute;*/
-}
-
-main>section:nth-child(1)>section>h1:nth-child(1){
-    top: 17%;
-    font-size:70px;
-    font-family: 'Roboto Mono', monospace;
-    font-family: 'Ysabeau', sans-serif;
-    left: 10%;
-
-}
-
-main>section:nth-child(1)>section>h2:nth-child(2){
-
-
-    color: #eeeeee;
-    top: 25%;
-    font-size:72px;
-    /*font-size: 100%;*/
-    font-family: 'Roboto Mono', monospace;
-    left: 10%;
-}
-
-main>section:nth-child(1)>section>h1:nth-child(3){
-    color: #02ECFF;
-    top: 25%;
-    font-size:50px;
-    font-family: 'Roboto Mono', monospace;
-    left: 10%;
-}
-
-
 @-webkit-keyframes slide-top {
     0% {
         transform: translateY(0);
@@ -129,25 +53,28 @@ main>section:nth-child(1)>section>h1:nth-child(3){
 .slide-top {
 
 
-    -webkit-animation:shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both, slide-top 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
-    animation:shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both, slide-top 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
+    -webkit-animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both, slide-top 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
+    animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both, slide-top 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
 }
+
 .slide-top-2 {
 
-    -webkit-animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both,slide-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
-    animation:shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both, slide-top  2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
+    -webkit-animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both, slide-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
+    animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both, slide-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
     /*-webkit-animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
     animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;*/
 }
+
 .slide-top-3 {
 
-    -webkit-animation:shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both, slide-top 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
-    animation:shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both ,slide-top 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
+    -webkit-animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both, slide-top 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
+    animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both, slide-top 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
 }
+
 .slide-top-4 {
 
-    -webkit-animation:shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both, slide-top 6s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
-    animation:shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both, slide-top 6s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
+    -webkit-animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both, slide-top 6s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
+    animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both, slide-top 6s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
 }
 
 @-webkit-keyframes rotate-scale-up {
@@ -164,6 +91,7 @@ main>section:nth-child(1)>section>h1:nth-child(3){
         transform: scale(1) rotateZ(360deg);
     }
 }
+
 @keyframes rotate-scale-up {
     0% {
         -webkit-transform: scale(1) rotateZ(0);
@@ -196,6 +124,7 @@ main>section:nth-child(1)>section>h1:nth-child(3){
         opacity: 1;
     }
 }
+
 @keyframes text-focus-in {
     0% {
         -webkit-filter: blur(12px);
@@ -208,6 +137,7 @@ main>section:nth-child(1)>section>h1:nth-child(3){
         opacity: 1;
     }
 }
+
 .text-focus-in {
     -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -338,6 +268,7 @@ main>section:nth-child(1)>section>h1:nth-child(3){
         opacity: 0;
     }
 }
+
 @keyframes text-flicker-out-glow {
     0% {
         opacity: 1;
@@ -463,6 +394,7 @@ main>section:nth-child(1)>section>h1:nth-child(3){
         opacity: 0;
     }
 }
+
 .text-flicker-out-glow {
     -webkit-animation: text-flicker-out-glow 2.5s linear infinite both;
     animation: text-flicker-out-glow 2.5s linear infinite both;
@@ -481,6 +413,7 @@ main>section:nth-child(1)>section>h1:nth-child(3){
         opacity: 1;
     }
 }
+
 @keyframes tracking-in-expand {
     0% {
         letter-spacing: -0.5em;
@@ -510,6 +443,7 @@ main>section:nth-child(1)>section>h1:nth-child(3){
         transform: translateX(100px);
     }
 }
+
 @keyframes slide-right {
     0% {
         -webkit-transform: translateX(0);
@@ -530,6 +464,7 @@ main>section:nth-child(1)>section>h1:nth-child(3){
     -webkit-animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
     animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
 }
+
 @-webkit-keyframes shadow-drop-center {
     0% {
         -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -540,6 +475,7 @@ main>section:nth-child(1)>section>h1:nth-child(3){
         box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
     }
 }
+
 @keyframes shadow-drop-center {
     0% {
 
@@ -552,5 +488,104 @@ main>section:nth-child(1)>section>h1:nth-child(3){
     }
 }
 
+/*=====================================================*/
+
+#home {
+    width: 100%;
+    height: auto;
+    /*border: solid 1px red;*/
+    top: 71px;
+    position: relative;
+    padding: 3rem;
+}
+
+#home-container {
+    /*border: solid 1px #0c8dff;*/
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    gap: 50px;
+    position: relative;
+    justify-content: center;
+    /*border: solid 1px #ffef00;*/
+
+}
+
+.home-Container-col{
+    position: relative;
+    /*border: solid 1px #e70cff;*/
+}
+
+.home-Container-col:nth-child(1) {
+    width: 960px;
+    /*border: solid 1px #0cff34;*/
+}
+
+.home-Container-col:nth-child(2) {
+    width: 656px;
+
+}
+
+.home-Container-col > section > h1 {
+    color: #eeeeee;
+    font-family: 'Roboto Mono', monospace;
+    position: relative;
+}
+#home-container>.home-Container-col:nth-child(1)>section{
+    /*border: solid #4dff00 1px;*/
+    position: relative;
+    top: 15%;
+}
+
+.home-Container-col > section > h1:nth-child(1) {
+    top: 17%;
+    font-size:70px;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Ysabeau', sans-serif;
+    margin-left: 10%;
+
+}
+
+.home-Container-col > section > h2:nth-child(2) {
 
 
+    color: #ffffff;
+    font-size: 72px;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+.home-Container-col > section > h1:nth-child(3) {
+    color: #02ECFF;
+    top: 25%;
+    font-size: 50px;
+    font-family: 'Roboto Mono', monospace;
+    margin-left: 10%;
+}
+
+.home-Container-col > section > i {
+    color: #02ECFF;
+    font-size: 50px;
+    /*text-shadow: 0px 0px 21px rgba(36, 232, 248, 0.5);*/
+}
+
+.home-Container-col > aside > img {
+    height: 600px;
+    /*border-radius: 0px 80px ;*/
+    /*box-shadow: 0px 4px 88px 21px rgba(2, 236, 255, 0.25);*/
+    /*border-radius: 150px 0px;*/
+    *position: relative;
+    margin-right: 5%;
+    margin-top:20%;
+
+}
+
+.home-icon > img {
+    height: 60px;
+
+}
+.home-icon{
+    position: relative;
+    margin-left: 10%;
+}

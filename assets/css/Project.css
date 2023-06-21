@@ -1,8 +1,10 @@
 main > section:nth-child(4) {
-    width: auto;
-    height: 100vh;
+    width: 99vw;
+    height: auto;
     position: relative;
     background: linear-gradient(180deg, #191E23 0%, rgba(4, 164, 167, 0.04) 100%);
+    margin: 0;
+    padding: 3rem;
 }
 
 .text-content{
@@ -10,18 +12,23 @@ main > section:nth-child(4) {
     font-family: 'Righteous', cursive;
     font-size: 40px;
     text-align: center;
-    margin-top: 3rem;
+    /*margin-top: 3rem;*/
+    /*width: 90%;*/
+    margin-bottom: 20px;
 }
 .box{
     /*border: solid white 1px;*/
-    height: 375px;
-    width: 350px;
+    height: 100%;
+    width: 100%;
     /*background-color: #2b3035;*/
     border-radius: 10px;
     padding: 20px;
-    background: linear-gradient(180deg, #2b3035 0%, rgba(0, 251, 255, 0.01) 100%);
+    /*background: linear-gradient(180deg, #2b3035 0%, rgba(0, 251, 255, 0.01) 100%);*/
     display: inline-block;
-    margin: 30px;
+    /*margin: 30px;*/
+    position: relative;
+    background: linear-gradient(180deg, #191E23 5.21%, #2B343D 100%);
+    box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.25);
 }
 .box:hover{
     background: linear-gradient(180deg, #2b3035 0%, rgba(0, 251, 255, 0.27) 100%);
@@ -34,18 +41,10 @@ main > section:nth-child(4) {
     margin-bottom: 1rem;
 }
 
-#service-contener{
-    /*border: solid 1px white;*/
-    margin-top: 65px;
-    width: 65vw;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
 #git-icon{
     font-size: 60px;
     color: #02ECFF;
+    text-align: center;
 }
 #A-sec{
 margin-top: 70px;
@@ -71,10 +70,7 @@ margin-top: 70px;
     /*border:  solid 1px white;*/
 }
 #get{
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
+    position: relative;
 }
 
 .h1-ass{
@@ -127,4 +123,61 @@ margin-top: 70px;
     right: 0;
     margin-right: 20px;
     margin-bottom: 20px;
+}
+
+.container-project-flex{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 50px;
+    justify-content: center;
+    margin-bottom: 20px;
+    /*border: solid 1px white;*/
+}
+
+
+.container-project-col{
+    /*border: solid 1px #f31f1f;*/
+    width: 350px;
+    height: 375px;
+    position: relative;
+    justify-content: center;
+}
+
+.project-container{
+    width: 100%;
+    /*border: solid 1px #0392ff;*/
+    margin: 0;
+}
+
+.service-container-col{
+    width: 100%;
+    position: relative;
+    /*border: solid 1px white;*/
+}
+
+#service-container{
+    /*border: solid 1px white;*/
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    /*border: solid 1px white;*/
+}
+
+#service-container>div:nth-child(5){
+    width: 150px;
+}
+#service-container>div:nth-child(2){
+    margin-bottom: 50px;
+}
+#service-container>div:nth-child(1){
+    width: 60px;
+    /*border: solid 1px white;*/
+}
+p{
+    text-align: center;
 }

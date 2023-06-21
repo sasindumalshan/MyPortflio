@@ -5,6 +5,9 @@
 
 @media (max-width: 320px) {
     /*Home  ====================================================================*/
+    main>section:nth-child(1){
+        height: 500px;
+    }
     main>section:nth-child(1)>aside>img {
         height: 293px;
         right: 10%;
@@ -30,7 +33,7 @@
 
     }
     main>section:nth-child(1)>section {
-        top: 52%;
+        top: 74%;
 
     }
     main>section:nth-child(1)>section>h1:nth-child(3) {
@@ -89,5 +92,58 @@
     }
 
 /*    ================================================*/
+/*    about*/
 
+    .box-details {
+        height: 534px;
+        width: 265px;
+        padding: 20px;
+        margin: 15px;
+        margin-left: -15px;
+    }
+    .text-h {
+        font-size: 15px;
+    }
+    .box-details> section {
+        top: 55%;
+    }
+    main > section:nth-child(2) {
+        height: 1400px;
+    }
+    #about-me> aside {
+        top: 56%;
+        right: 3rem;
+        width: 268px;
+        height: 400px;
+    }
+    main>section>aside {
+        left: 9%;
+    }
+    p {
+        font-size: 12px;
+    }
+    main > section:nth-child(2) > aside > button {
+        height: 32px;
+        width: 90px;
+        font-size: 10px;
+    }
+    h1.m-b-2.text-h {
+        font-size: 14px;
+    }
+    span.m-b-1.text-h.m-l{
+        font-size: 14px;
+    }
+
+    .box {
+        height: 265px;
+        width: 265px;
+        margin: 20px;
+        margin-left: -24px;
+    }
+    .h1-txt {
+        font-size: 18px;
+    }
+    main > section:nth-child(4) {
+        height: 1000px;
+    }
 }

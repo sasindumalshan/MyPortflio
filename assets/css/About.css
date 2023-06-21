@@ -1,14 +1,9 @@
-main > section:nth-child(2) {
-    height: 600px;
-    position: relative;
-    background: linear-gradient(180deg, #191E23 5.21%, #2B343D 100%);
-}
 
 body {
     background-color: #191E23
 }
 
-main > section:nth-child(2) > aside > button {
+.about-Container-col > aside > button {
     /*position: absolute;*/
     height: 50px;
     width: 200px;
@@ -20,11 +15,6 @@ main > section:nth-child(2) > aside > button {
 
     font-family: 'Roboto Mono', monospace;
     font-size: 15px;
-
- /*   bottom: 0;
-    right: 0;
-    margin-bottom: 4%;
-    margin-right: 4%;*/
 
 
 }
@@ -54,17 +44,11 @@ main > section:nth-child(2) > section > h1 > span {
 }
 
 main > section:nth-child(2) > aside > article > p {
-/*    color: #eeeeee;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 15px;
-    position: absolute;
-    bottom: 18%;
-    left: 40%;*/
 }
 
 #about-me> aside{
-    position: absolute;
-    top: 10%;
+   /* position: absolute;
+    top: 20%;*/
     right: 3rem;
     width:900px ;
     height: 400px;
@@ -103,4 +87,27 @@ hr{
 }
 #box-details-logo-box{
     width: 200px;
+}
+
+#about-Container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    /*border: solid 1px white;*/
+    width: 100%;
+    position: relative;
+}
+
+#about-me{
+    width: 100%;
+    height: auto;
+    /*border: solid 1px red;*/
+    padding: 3rem;
+    background: linear-gradient(180deg, #191E23 5.21%, #2B343D 100%);
+}
+.about-Container-col{
+    width: 740px;
+    /*border: solid 1px red;*/
+    position: relative;
 }

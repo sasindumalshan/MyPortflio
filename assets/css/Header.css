@@ -4,9 +4,10 @@
 *{
     margin: 0px;
     margin-top: 0px;
-    padding: 0;
+    padding:0;
     box-sizing: border-box;
     /*background-color: #191E23;*/
+
 }
 
 header{
@@ -15,6 +16,7 @@ header{
     width: 100vw;
     position: fixed;
     z-index:1;
+    /*border: solid red 1px;*/
 }
 header>nav>a{
     color: white;
