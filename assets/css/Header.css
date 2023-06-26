@@ -18,18 +18,6 @@ header{
     z-index:1;
     /*border: solid red 1px;*/
 }
-header>nav>a{
-    color: white;
-    text-decoration:none;
-    margin-left: 3%;
-    /*font-size: 23px;*/
-    /*font-size: calc( 1px + (24 - 16) * (100vw - 400px) / (800 - 400) );*/
-    font-size: 25px;
-    font-family: 'Roboto Mono', monospace;
-    /*border: solid  ;*/
-
-}
-
 header>nav>a:hover{
     color:#02ECFF;
     text-decoration: underline ;
@@ -41,9 +29,25 @@ header>nav>a:hover{
 
 
 }
+
+header>nav>a{
+    color: white;
+    text-decoration:none;
+    margin-left: 3%;
+    font-size: 25px;
+    font-family: 'Roboto Mono', monospace;
+    border: solid 1px red;
+}
 header>nav{
     margin-top: 1%;
     position: relative;
-    /*border: solid 1px white;*/
-    margin-left: 50%;
+    /*margin-left: 50%;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    border: solid 1px red;
+    /*width: 648px;*/
+}
+header>nav>a:nth-child(5){
+    margin-right:100px;
 }

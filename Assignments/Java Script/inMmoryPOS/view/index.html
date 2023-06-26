@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Fashion Fiesta</title>
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/My css.css" rel="stylesheet">
+    <link href="assest/css/bootstrap.css" rel="stylesheet">
+    <link href="assest/css/My%20css.css" rel="stylesheet">
     <link rel="stylesheet" href="assest/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.css">
 
 </head>
@@ -387,51 +387,51 @@
                             </div>
 
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Customer ID" aria-label="Dollar amount (with dot and two decimal places)">
+                                <input id="customer_id" type="text" class="form-control" placeholder="Customer ID" aria-label="Dollar amount (with dot and two decimal places)">
                                 <button class="btn btn-dark"><i class="fa-solid fa-magnifying-glass"></i></button>
                             </div>
 
                             <div>
                                 <h6>Customer Name</h6>
-                                <p class="text-capitalize">XXXXX XXXXX</p>
+                                <p id="customer_name" class="text-capitalize">XXXXX XXXXX</p>
                             </div>
 
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Item Code" aria-label="Dollar amount (with dot and two decimal places)">
+                                <input id="item_code" type="text" class="form-control" placeholder="Item Code" aria-label="Dollar amount (with dot and two decimal places)">
                                 <button class="btn btn-dark"><i class="fa-solid fa-magnifying-glass"></i></button>
                             </div>
 
                             <div>
                                 <h6>Item Description</h6>
-                                <p class="text-capitalize">XXXXX XXXXX</p>
+                                <p id="discription" class="text-capitalize">XXXXX XXXXX</p>
                             </div>
 
                             <div>
                                 <h6>Item QTY</h6>
-                                <p class="text-capitalize">00</p>
+                                <p id="item_qty" class="text-capitalize">00</p>
                             </div>
 
                             <div class="input-group mb-3">
                                 <span class="input-group-text">QTY</span>
-                                <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                                <input id="order_qty" type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
                             </div>
 
                             <div class="mb-5">
-                                <button class="btn btn-primary w-50" type="button">Add Item</button>
+                                <button id="add_to_cart" class="btn btn-primary w-50" type="button">Add Item</button>
                             </div>
 
                             <div class="mb-3">
                                 <h4 class="d-inline-block input-group-text">Total</h4>
-                                <h3 class="text-capitalize d-inline-block">00.00</h3>
+                                <h3 id="total" class="text-capitalize d-inline-block">00.00</h3>
                             </div>
 
                             <div class="input-group mb-5">
                                 <span class="input-group-text">Rs</span>
-                                <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                                <input id="amount" type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
                             </div>
 
                             <div class="mb-5">
-                                <button class="btn btn-success" type="button">Place Order</button>
+                                <button id="place_order" class="btn btn-success" type="button">Place Order</button>
                             </div>
 
 
@@ -443,9 +443,11 @@
         </div>
     </div>
 </section>
-<script src="js/bootstrap.js"></script>
+<script src="assest/js/bootstrap.js"></script>
 <script src="assest/js/jquery-3.7.0.min.js"></script>
-<script src="assest/js/MyScript.js"></script>
+
+<script type="module" src="../controller/MyScript.js"></script>
+
 
 
 </body>

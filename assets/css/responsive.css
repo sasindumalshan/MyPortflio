@@ -5,95 +5,103 @@
 
 @media (max-width: 320px) {
     /*Home  ====================================================================*/
-    main>section:nth-child(1){
-        height: 500px;
-    }
-    main>section:nth-child(1)>aside>img {
-        height: 293px;
-        right: 10%;
-        top: 13%;
-    }
-    main>section:nth-child(1)>section:nth-child(3)>i {
-        font-size: 25px;
-    }
-    main>section:nth-child(1)>section:nth-child(3) {
-        left: 13%;
-        top: 8%;
-        height: 424px;
-        width: 246px;
-
+    .home-Container-col > section > h1:nth-child(1) {
+        font-size: 29px;
     }
 
-    main>section:nth-child(1)>section>h1:nth-child(1) {
-        top: 9%;
-        font-size: 27px;
+    .home-Container-col > section > h2:nth-child(2) {
+        font-size: 23px !important;
     }
-    main>section:nth-child(1)>section>h2:nth-child(2) {
+
+    .home-Container-col > section > h2:nth-child(2) {
         font-size: 23px;
-
     }
-    main>section:nth-child(1)>section {
-        top: 74%;
 
+    .home-icon > img {
+        height: 23px  !important;
     }
-    main>section:nth-child(1)>section>h1:nth-child(3) {
-        font-size: 17px;
-        margin-top: 5px;
 
+    .home-Container-col > aside > img {
+        height: 214px;
+        margin-right: 0px;
     }
-    .home-icon > img{
-        height: 21px;
-        margin-top: 10px;
+
+    .home-Container-col > section > i {
+        font-size: 20px;
+        /* text-shadow: 0px 0px 21px rgba(36, 232, 248, 0.5); */
+    }
+
+    .home-Container-col:nth-child(2) {
+        width: 234px;
+    }
+
+    #home {
+        padding: 1rem;
+    }
+
+
+    .home-Container-col > section > h1:nth-child(3) {
+        font-size: 20px !important;
+        margin-left: 9%;
+        margin-bottom: 20px;
+    }
+    header>nav>a:nth-child(5){
+        margin-right:0px !important;
     }
 
     /*header ========================================================================*/
-
-    header{
+    header {
         height: 4%;
 
     }
-    header>nav>a{
+
+    header > nav > a {
         font-size: 12px;
     }
-    header>nav{
-       margin-left: 0;
+
+    header > nav {
+        margin-left: 0;
     }
 
-/*    about me ===========================================*/
-
-    main>section:nth-child(2)>h2 {
+    /*    about me ===========================================*/
+    main > section:nth-child(2) > h2 {
         font-size: 25px;
         margin-left: 20px;
     }
-    main>section:nth-child(2)>section {
+
+    main > section:nth-child(2) > section {
         top: 50%;
         left: 4%;
     }
-    main>section:nth-child(2)>section>h1 {
+
+    main > section:nth-child(2) > section > h1 {
         font-size: 12px;
         margin-top: 21px;
     }
-    main>section:nth-child(2)>section>h1>i {
+
+    main > section:nth-child(2) > section > h1 > i {
         margin-right: 20px;
     }
 
-    main>section>aside>h1 {
+    main > section > aside > h1 {
         font-size: 12px;
     }
-    main>section>aside>h1>i {
+
+    main > section > aside > h1 > i {
         margin-right: 18px;
     }
-    main>section>aside>h1 {
+
+    main > section > aside > h1 {
         right: 25%;
         top: 29%;
     }
-    main>section>aside{
+
+    main > section > aside {
         left: 4%;
     }
 
-/*    ================================================*/
-/*    about*/
-
+    /*    ================================================*/
+    /*    about*/
     .box-details {
         height: 534px;
         width: 265px;
@@ -101,49 +109,478 @@
         margin: 15px;
         margin-left: -15px;
     }
+
     .text-h {
         font-size: 15px;
     }
-    .box-details> section {
+
+    .box-details > section {
         top: 55%;
     }
+
     main > section:nth-child(2) {
         height: 1400px;
     }
-    #about-me> aside {
+
+    #about-me > aside {
         top: 56%;
         right: 3rem;
         width: 268px;
         height: 400px;
     }
-    main>section>aside {
+
+    main > section > aside {
         left: 9%;
     }
+
     p {
         font-size: 12px;
     }
+
     main > section:nth-child(2) > aside > button {
         height: 32px;
         width: 90px;
         font-size: 10px;
     }
+
     h1.m-b-2.text-h {
         font-size: 14px;
     }
-    span.m-b-1.text-h.m-l{
+
+    span.m-b-1.text-h.m-l {
         font-size: 14px;
     }
 
     .box {
-        height: 265px;
-        width: 265px;
-        margin: 20px;
-        margin-left: -24px;
+        height: 214px;
+        width: 209px;
+        margin: 0px;
+
+
     }
+
     .h1-txt {
-        font-size: 18px;
+        font-size: 14px;
     }
-    main > section:nth-child(4) {
-        height: 1000px;
+
+    .container-project-col {
+        width: 262px;
+        height: 218px;
     }
+
+    .text-content {
+        font-size: 24px;
+    }
+
+    .form-control {
+        height: 39px;
+        width: 225px;
+        margin-left: -2px;
+        margin-bottom: 20px;
+    }
+
+    .skill > p {
+        font-size: 11px;
+    }
+
 }
+
+@media(min-width: 320px)and (max-width: 768px ) {
+    .box-details{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .home-Container-col > section > h1:nth-child(3) {
+        font-size: 37px;
+    }
+    .home-Container-col > section > h2:nth-child(2) {
+        font-size: 58px;
+    }
+    .home-icon > img {
+        height: 41px;
+    }
+    header>nav>a:nth-child(5){
+        margin-right:10px;
+    }
+
+}
+
+@media (min-width: 768px)and (max-width: 1024px){
+
+}
+
+@media(min-width: 1023px) and (max-width: 1440px) {
+
+}
+@media (min-width:1439px ) and(max-width: 2560px){
+
+}
+
+@media (max-width: 375px) {
+    /*Home  ====================================================================*/
+    .home-Container-col > section > h1:nth-child(1) {
+        font-size: 29px;
+    }
+
+    .home-Container-col > section > h2:nth-child(2) {
+        font-size: 23px !important;
+    }
+
+    .home-Container-col > section > h2:nth-child(2) {
+        font-size: 23px;
+    }
+
+    .home-icon > img {
+        height: 23px  !important;
+    }
+
+    .home-Container-col > aside > img {
+        height: 214px;
+        margin-right: 0px;
+    }
+
+    .home-Container-col > section > i {
+        font-size: 20px;
+        /* text-shadow: 0px 0px 21px rgba(36, 232, 248, 0.5); */
+    }
+
+    .home-Container-col:nth-child(2) {
+        width: 234px;
+    }
+
+    #home {
+        padding: 1rem;
+    }
+
+
+    .home-Container-col > section > h1:nth-child(3) {
+        font-size: 20px !important;
+        margin-left: 9%;
+        margin-bottom: 20px;
+    }
+    header>nav>a:nth-child(5){
+        margin-right:0px !important;
+    }
+
+    /*header ========================================================================*/
+    header {
+        height: 4%;
+
+    }
+
+    header > nav > a {
+        font-size: 12px;
+    }
+
+    header > nav {
+        margin-left: 0;
+    }
+
+    /*    about me ===========================================*/
+    main > section:nth-child(2) > h2 {
+        font-size: 25px;
+        margin-left: 20px;
+    }
+
+    main > section:nth-child(2) > section {
+        top: 50%;
+        left: 4%;
+    }
+
+    main > section:nth-child(2) > section > h1 {
+        font-size: 12px;
+        margin-top: 21px;
+    }
+
+    main > section:nth-child(2) > section > h1 > i {
+        margin-right: 20px;
+    }
+
+    main > section > aside > h1 {
+        font-size: 12px;
+    }
+
+    main > section > aside > h1 > i {
+        margin-right: 18px;
+    }
+
+    main > section > aside > h1 {
+        right: 25%;
+        top: 29%;
+    }
+
+    main > section > aside {
+        left: 4%;
+    }
+
+    /*    ================================================*/
+    /*    about*/
+    .box-details {
+        height: 534px;
+        width: 265px;
+        padding: 20px;
+        margin: 15px;
+        margin-left: -15px;
+    }
+
+    .text-h {
+        font-size: 15px;
+    }
+
+    .box-details > section {
+        top: 55%;
+    }
+
+    main > section:nth-child(2) {
+        height: 1400px;
+    }
+
+    #about-me > aside {
+        top: 56%;
+        right: 3rem;
+        width: 268px;
+        height: 400px;
+    }
+
+    main > section > aside {
+        left: 9%;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    main > section:nth-child(2) > aside > button {
+        height: 32px;
+        width: 90px;
+        font-size: 10px;
+    }
+
+    h1.m-b-2.text-h {
+        font-size: 14px;
+    }
+
+    span.m-b-1.text-h.m-l {
+        font-size: 14px;
+    }
+
+    .box {
+        height: 214px;
+        width: 209px;
+        margin: 0px;
+
+
+    }
+
+    .h1-txt {
+        font-size: 14px;
+    }
+
+    .container-project-col {
+        width: 262px;
+        height: 218px;
+    }
+
+    .text-content {
+        font-size: 24px;
+    }
+
+    .form-control {
+        height: 39px;
+        width: 225px;
+        margin-left: -2px;
+        margin-bottom: 20px;
+    }
+
+    .skill > p {
+        font-size: 11px;
+    }
+
+}
+
+@media (max-width: 425px) {
+    /*Home  ====================================================================*/
+    .home-Container-col > section > h1:nth-child(1) {
+        font-size: 29px;
+    }
+
+    .home-Container-col > section > h2:nth-child(2) {
+        font-size: 23px !important;
+    }
+
+    .home-Container-col > section > h2:nth-child(2) {
+        font-size: 23px;
+    }
+
+    .home-icon > img {
+        height: 23px  !important;
+    }
+
+    .home-Container-col > aside > img {
+        height: 214px;
+        margin-right: 0px;
+    }
+
+    .home-Container-col > section > i {
+        font-size: 20px;
+        /* text-shadow: 0px 0px 21px rgba(36, 232, 248, 0.5); */
+    }
+
+    .home-Container-col:nth-child(2) {
+        width: 234px;
+    }
+
+    #home {
+        padding: 1rem;
+    }
+
+
+    .home-Container-col > section > h1:nth-child(3) {
+        font-size: 20px !important;
+        margin-left: 9%;
+        margin-bottom: 20px;
+    }
+    header>nav>a:nth-child(5){
+        margin-right:0px !important;
+    }
+
+    /*header ========================================================================*/
+    header {
+        height: 4%;
+
+    }
+
+    header > nav > a {
+        font-size: 12px;
+    }
+
+    header > nav {
+        margin-left: 0;
+    }
+
+    /*    about me ===========================================*/
+    main > section:nth-child(2) > h2 {
+        font-size: 25px;
+        margin-left: 20px;
+    }
+
+    main > section:nth-child(2) > section {
+        top: 50%;
+        left: 4%;
+    }
+
+    main > section:nth-child(2) > section > h1 {
+        font-size: 12px;
+        margin-top: 21px;
+    }
+
+    main > section:nth-child(2) > section > h1 > i {
+        margin-right: 20px;
+    }
+
+    main > section > aside > h1 {
+        font-size: 12px;
+    }
+
+    main > section > aside > h1 > i {
+        margin-right: 18px;
+    }
+
+    main > section > aside > h1 {
+        right: 25%;
+        top: 29%;
+    }
+
+    main > section > aside {
+        left: 4%;
+    }
+
+    /*    ================================================*/
+    /*    about*/
+    .box-details {
+        height: 534px;
+        width: 265px;
+        padding: 20px;
+        /*margin: 15px;*/
+        /*margin-left: -15px;*/
+    }
+
+    .text-h {
+        font-size: 15px;
+    }
+
+    .box-details > section {
+        top: 55%;
+    }
+
+    main > section:nth-child(2) {
+        height: 1400px;
+    }
+
+    #about-me > aside {
+        top: 56%;
+        right: 3rem;
+        width: 268px;
+        height: 400px;
+    }
+
+    main > section > aside {
+        left: 9%;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    main > section:nth-child(2) > aside > button {
+        height: 32px;
+        width: 90px;
+        font-size: 10px;
+    }
+
+    h1.m-b-2.text-h {
+        font-size: 14px;
+    }
+
+    span.m-b-1.text-h.m-l {
+        font-size: 14px;
+    }
+
+    .box {
+        height: 214px;
+        width: 209px;
+        margin: 0px;
+
+
+    }
+
+    .h1-txt {
+        font-size: 14px;
+    }
+
+    .container-project-col {
+        width: 262px;
+        height: 218px;
+    }
+
+    .text-content {
+        font-size: 24px;
+    }
+
+    .form-control {
+        height: 39px;
+        width: 225px;
+        margin-left: -2px;
+        margin-bottom: 20px;
+    }
+
+    .skill > p {
+        font-size: 11px;
+    }
+
+}
+
+
+
+
+

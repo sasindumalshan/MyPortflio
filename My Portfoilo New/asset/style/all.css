@@ -1,0 +1,36 @@
+*{
+    background-color: #191E23;
+}
+.my-t-1{
+    font-family: 'Open Sans', sans-serif;
+    /*font-weight: bold;*/
+}
+.my-t-2{
+    font-family: 'Ysabeau SC', sans-serif;
+    /*font-weight: bold;*/
+}
+.c-w{
+    color: white;
+}
+
+.f-size{
+    font-size: 30px;
+}
+.b-c-r{
+    border: solid red 1px;
+}
+.container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    /*border: solid #0800ff 1px;*/
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.gap{
+    gap: 50px;
+}
+.txt-light-blue{
+    color: #1fb1ff;
+}

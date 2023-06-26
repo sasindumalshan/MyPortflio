@@ -1,3 +1,7 @@
+import {cust} from "./db.js";
+import {items} from "./db.js";
+import {Order} from "../dto/Order";
+
 document.getElementById("D-Bord").style.display = 'block';
 document.getElementById("customer-form").style.display = 'none';
 document.getElementById("Item-from").style.display = 'none';
@@ -41,9 +45,6 @@ document.getElementById("P-Order").addEventListener('click', function () {
     document.getElementById("order-from").style.display = 'none';
     document.getElementById("PlaceOrder").style.display = 'block';
 });
-
-var cust=[];
-var items=[];
 
 function setPropety() {
     $('#myCustomerTable>tbody>tr').click(function () {
@@ -157,11 +158,14 @@ $('#NewCustAdd').click(function () {
         '<td>'+customer.getContact()+'</td>' +
         '<td>'+customer.getEmail()+"@gmail.com"+'</td>' +
         '</tr>');
-   /* $('#FName').val("");
+   /*
+    $('#FName').val("");
     $('#LName').val("");
     $('#Address').val("");
     $('#Gmail').val("");
-    $('#ContactNumber').val("");*/
+    $('#ContactNumber').val("");
+    */
+    console.log(cust)
     clearCustomerInput();
     customerCount();
     setPropety();
@@ -193,11 +197,12 @@ $('#NewItem').click(function () {
 
 });
 
-
-
 $('#Customer').click(function () {
 
 });
+
+$
+
 class Item {
 
     constructor() {
