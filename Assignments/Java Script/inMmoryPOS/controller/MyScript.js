@@ -354,7 +354,7 @@ class Item {
 
 }*/
 
-class Customer {
+/*class Customer {
 
     constructor() {
         var customer_id;
@@ -413,7 +413,7 @@ class Customer {
         this.gmail=gmail;
     }
 
-}
+}*/
 
 
 
