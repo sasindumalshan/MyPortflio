@@ -273,10 +273,10 @@ function nextNewOrderID() {
     if (orders.length==0){
         return "O1";
     }else {
-        let custElement = orders[orders.length-1];
-        let customerId = custElement.getCustomerId();
-        console.log(customerId)
-        let splitText = customerId.split("O");
+        let order = orders[orders.length-1];
+        let orderId = order.getOrder_id();
+        console.log(orderId)
+        let splitText = orderId.split("O");
         console.log(splitText)
         let number = parseInt(splitText[1]);
         console.log(number)
@@ -298,16 +298,20 @@ $('#place_order').on('click',function () {
 });
 
 $('#Orders').on('click',function () {
+    $('#myCustomerOrder>tbody>tr').remove();
+    let num=0;
     for (const order of orders) {
+        num++;
         console.log(order)
         $('#myCustomerOrder').append('<tr>' +
-            '<td><b>'+parseInt(orders.length)+'</td>' +
+            '<td><b>'+num+'</td>' +
             '<td>'+order.getOrder_id()+'</td>' +
             '<td>'+order.getCustomer_id()+'</td>'+
             '<td>'+order.getTotal()+'</td>' +
             '<td>'+order.getOrder_date()+'</td>' +
             '</tr>');
     }
+
 
 });
 /*
