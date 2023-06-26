@@ -13,22 +13,23 @@ export class Order {
     {
         this.order_id=order_id;
     }
-    geOrder_date(){
+    getOrder_date(){
         return this.order_date;
     }
     setOrder_date(order_date){
         this.order_date=order_date;
     }
-    geTotal(){
-        return this.order_date;
+    getTotal(){
+        return this.total;
     }
     setTotal(total){
         this.total=total;
     }
-    geCustomer_id(){
-        return this.order_date;
+    getCustomer_id(){
+        return this.customer_id;
     }
     setCustomer_id(customer_id){
         this.customer_id=customer_id;
     }
+
 }

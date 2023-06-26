@@ -7,6 +7,8 @@
     <link href="assest/css/My%20css.css" rel="stylesheet">
     <link rel="stylesheet" href="assest/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.css">
 
+
+
 </head>
 <body>
 <section>
@@ -217,7 +219,7 @@
                                     <thead>
                                     <tr>
                                         <th scope="col">#</th>
-                                        <th scope="col">Code</th>
+<!--                                        <th scope="col">Code</th>-->
                                         <th scope="col">Description</th>
                                         <th scope="col">Price</th>
                                         <th scope="col">Qty</th>
@@ -290,38 +292,18 @@
 
                             </div>
                             <div>
-                                <table class="table">
+                                <table id="myCustomerOrder" class="table">
                                     <thead>
                                     <tr>
                                         <th scope="col">#</th>
-                                        <th scope="col">Code</th>
-                                        <th scope="col">Description</th>
+                                        <th scope="col">Order ID</th>
+                                        <th scope="col">Customer ID</th>
                                         <th scope="col">Price</th>
                                         <th scope="col">Qty</th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>Otto</td>
-                                        <td>Otto</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Jacob</td>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Larry the Bird</td>
-                                        <td>Larry the Bird</td>
-                                        <td>Larry the Bird</td>
-                                        <td>Larry the Bird</td>
-                                    </tr>
+
                                     </tbody>
                                 </table>
                             </div>
@@ -340,7 +322,7 @@
                                 <span class="input-group-text border-0" id="search"><i class="fa-solid fa-magnifying-glass"></i></i></span>
                             </div>
                             <div>
-                                <table class="table">
+                                <table id="myCustomerOrderDetails" class="table">
                                     <thead>
                                     <tr>
                                         <th scope="col">#</th>
@@ -352,30 +334,7 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>I001</td>
-                                        <td>Biscuit</td>
-                                        <td>1000.00</td>
-                                        <td>2</td>
-                                        <td><button class="btn bg-danger text-white  "><i class="fa-solid fa-trash "></i></button></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>I002</td>
-                                        <td>Juice</td>
-                                        <td>200.00</td>
-                                        <td>4</td>
-                                        <td><button class="btn bg-danger text-white  "><i class="fa-solid fa-trash "></i></button></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>I003</td>
-                                        <td>Rice</td>
-                                        <td>300.00</td>
-                                        <td>1</td>
-                                        <td><button class="btn bg-danger text-white  "><i class="fa-solid fa-trash "></i></button></td>
-                                    </tr>
+
                                     </tbody>
                                 </table>
                             </div>
@@ -443,10 +402,58 @@
         </div>
     </div>
 </section>
+<!--<script>
+    document.getElementById("D-Bord").style.display = 'block';
+    document.getElementById("customer-form").style.display = 'none';
+    document.getElementById("Item-from").style.display = 'none';
+    document.getElementById("order-from").style.display = 'none';
+    document.getElementById("PlaceOrder").style.display = 'none';
+
+
+    document.getElementById("Home").addEventListener('click', function () {
+        document.getElementById("D-Bord").style.display = 'block';
+        document.getElementById("customer-form").style.display = 'none';
+        document.getElementById("Item-from").style.display = 'none';
+        document.getElementById("order-from").style.display = 'none';
+        document.getElementById("PlaceOrder").style.display = 'none';
+    });
+
+    document.getElementById("Customer").addEventListener('click', function () {
+        document.getElementById("D-Bord").style.display = 'none';
+        document.getElementById("customer-form").style.display = 'block';
+        document.getElementById("Item-from").style.display = 'none';
+        document.getElementById("order-from").style.display = 'none';
+        document.getElementById("PlaceOrder").style.display = 'none';
+    });
+    document.getElementById("Item").addEventListener('click', function () {
+        document.getElementById("D-Bord").style.display = 'none';
+        document.getElementById("customer-form").style.display = 'none';
+        document.getElementById("Item-from").style.display = 'block';
+        document.getElementById("order-from").style.display = 'none';
+        document.getElementById("PlaceOrder").style.display = 'none';
+    });
+    document.getElementById("Orders").addEventListener('click', function () {
+        document.getElementById("D-Bord").style.display = 'none';
+        document.getElementById("customer-form").style.display = 'none';
+        document.getElementById("Item-from").style.display = 'none';
+        document.getElementById("order-from").style.display = 'block';
+        document.getElementById("PlaceOrder").style.display = 'none';
+    });
+    document.getElementById("P-Order").addEventListener('click', function () {
+        document.getElementById("D-Bord").style.display = 'none';
+        document.getElementById("customer-form").style.display = 'none';
+        document.getElementById("Item-from").style.display = 'none';
+        document.getElementById("order-from").style.display = 'none';
+        document.getElementById("PlaceOrder").style.display = 'block';
+    });
+
+</script>-->
+
 <script src="assest/js/bootstrap.js"></script>
 <script src="assest/js/jquery-3.7.0.min.js"></script>
-
 <script type="module" src="../controller/MyScript.js"></script>
+
+
 
 
 

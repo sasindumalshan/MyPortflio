@@ -1,6 +1,10 @@
 import {cust} from "./db.js";
 import {items} from "./db.js";
-import {Order} from "../dto/Order";
+import {cart,orderDetails,orders} from "./db.js";
+// import {orderDetails} from "./db.js";
+import {OrderModel} from "../modle/order.js"
+import {OrderDetails} from "../dto/OrderDetails.js"
+import {Order} from "../dto/Order.js"
 
 document.getElementById("D-Bord").style.display = 'block';
 document.getElementById("customer-form").style.display = 'none';
@@ -139,9 +143,26 @@ $('#FName').keydown(function (e) {
     }
 });
 
+function getNextId() {
+    if (cust.length==0){
+        return "C1";
+    }else {
+        let custElement = cust[cust.length-1];
+        let customerId = custElement.getCustomerId();
+        console.log(customerId)
+        let splitText = customerId.split("C");
+        console.log(splitText)
+        let number = parseInt(splitText[1]);
+        console.log(number)
+        number++;
+        console.log(number)
+        return "C"+number;
+    }
+}
 
 $('#NewCustAdd').click(function () {
     var customer=new Customer();
+    customer.setCustomerId(getNextId());
     customer.setFistName($('#FName').val());
     customer.setLastName($('#LName').val());
     customer.setAddress($('#Address').val());
@@ -151,20 +172,13 @@ $('#NewCustAdd').click(function () {
     cust.push(customer);
 
     $('#myCustomerTable').append('<tr>' +
-        '<td><b>0</td>' +
+        '<td><b>'+customer.getCustomerId()+'</td>' +
         '<td>'+customer.getFistName()+'</td>' +
         '<td>'+customer.getLastName()+'</td>' +
         '<td>'+customer.getAddress()+'</td>' +
         '<td>'+customer.getContact()+'</td>' +
         '<td>'+customer.getEmail()+"@gmail.com"+'</td>' +
         '</tr>');
-   /*
-    $('#FName').val("");
-    $('#LName').val("");
-    $('#Address').val("");
-    $('#Gmail').val("");
-    $('#ContactNumber').val("");
-    */
     console.log(cust)
     clearCustomerInput();
     customerCount();
@@ -183,8 +197,8 @@ $('#NewItem').click(function () {
     items.push(item);
 
     $('#MyItemTable').append('<tr>' +
-        '<td><b>0</td>' +
-        '<td>'+item.getCode()+'</td>' +
+        // '<td><b>0</td>' +
+        '<td><b>'+item.getCode()+'</td>' +
         '<td>'+item.getDescription()+'</td>' +
         '<td>'+item.getPrice()+'</td>' +
         '<td>'+item.getQty()+'</td>' +
@@ -200,8 +214,100 @@ $('#NewItem').click(function () {
 $('#Customer').click(function () {
 
 });
+$('#customer_id').on("keyup",function () {
+    let customerName = OrderModel.getCustomerName($('#customer_id').val());
+    $('#customer_name').text(customerName);
+});
 
-$
+$('#item_code').on("keyup",function () {
+    let itemName = OrderModel.getItemName($('#item_code').val());
+    $('#discription').text(itemName);
+    let qty = OrderModel.getItemQTY($('#item_code').val());
+    $('#item_qty').text(qty);
+});
+
+function setTotal() {
+    let total=0;
+    for (const price of cart) {
+        total+=parseInt(price.getPrice());
+    }
+    console.log(total)
+    $('#total').text(total);
+}
+
+$('#add_to_cart').on('click',function () {
+    let orderDetails = new OrderDetails();
+    orderDetails.setCode($('#item_code').val());
+    orderDetails.setQty($('#order_qty').val());
+    orderDetails.setDescription($('#discription').text());
+    let price = OrderModel.getPrice($('#item_code').val());
+    let number = parseInt($('#order_qty').val())*parseInt(price);
+    orderDetails.setPrice(number);
+
+    OrderModel.addToCart(orderDetails);
+    // cart.push(orderDetails);
+
+    $('#myCustomerOrderDetails').append('<tr>' +
+        '<td><b>'+parseInt(cart.length)+'</td>' +
+        '<td>'+orderDetails.getCode()+'</td>' +
+        '<td>'+orderDetails.getDescription()+'</td>'+
+        '<td>'+orderDetails.getPrice()+'</td>' +
+        '<td>'+orderDetails.getQty()+'</td>' +
+        '</tr>');
+    setTotal();
+});
+
+$("#amount").on('keyup',function () {
+    if (parseInt($('#amount').val())<parseInt($('#total').text())){
+        $('#place_order').attr("disabled",true);
+        $('#amount').css("color","red");
+    }else {
+        $('#place_order').attr("disabled",false);
+        $('#amount').css("color","black");
+    }
+});
+
+function nextNewOrderID() {
+    if (orders.length==0){
+        return "O1";
+    }else {
+        let custElement = orders[orders.length-1];
+        let customerId = custElement.getCustomerId();
+        console.log(customerId)
+        let splitText = customerId.split("O");
+        console.log(splitText)
+        let number = parseInt(splitText[1]);
+        console.log(number)
+        number++;
+        console.log(number)
+        return "O"+number;
+    }
+
+}
+
+$('#place_order').on('click',function () {
+
+    let o = new Order();
+    o.setOder_id(nextNewOrderID());
+    o.setCustomer_id($('#customer_id').val());
+    o.setTotal($('#total').text());
+    o.setOrder_date(new Date().toLocaleDateString());
+    OrderModel.PlaceOrder(o);
+});
+
+$('#Orders').on('click',function () {
+    for (const order of orders) {
+        console.log(order)
+        $('#myCustomerOrder').append('<tr>' +
+            '<td><b>'+parseInt(orders.length)+'</td>' +
+            '<td>'+order.getOrder_id()+'</td>' +
+            '<td>'+order.getCustomer_id()+'</td>'+
+            '<td>'+order.getTotal()+'</td>' +
+            '<td>'+order.getOrder_date()+'</td>' +
+            '</tr>');
+    }
+
+});
 
 class Item {
 
@@ -250,11 +356,20 @@ class Item {
 class Customer {
 
     constructor() {
+        var customer_id;
         var fistName;
         var lastName;
         var address;
         var contact;
         var gmail;
+    }
+    getCustomerId()
+    {
+        return this.customer_id;
+    }
+    setCustomerId(customer_id)
+    {
+        this.customer_id=customer_id;
     }
     getFistName()
     {
@@ -298,5 +413,7 @@ class Customer {
     }
 
 }
+
+
 
 
