@@ -1,5 +1,5 @@
-import {cart, cust,orderDetails,orders} from "../controller/db.js";
-import {items} from "../controller/db.js";
+import {cart, cust,orderDetails,orders} from "../db/db.js";
+import {items} from "../db/db.js";
 
 export class OrderModel {
   static getCustomerName(id){

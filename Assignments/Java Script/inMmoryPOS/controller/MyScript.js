@@ -1,6 +1,6 @@
-import {cust} from "./db.js";
-import {items} from "./db.js";
-import {cart,orderDetails,orders} from "./db.js";
+import {cust} from "../db/db.js";
+import {items} from "../db/db.js";
+import {cart,orderDetails,orders} from "../db/db.js";
 // import {orderDetails} from "./db.js";
 import {OrderModel} from "../modle/order.js"
 import {OrderDetails} from "../dto/OrderDetails.js"
