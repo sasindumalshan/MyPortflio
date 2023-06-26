@@ -308,7 +308,7 @@ $('#Orders').on('click',function () {
     }
 
 });
-
+/*
 class Item {
 
     constructor() {
@@ -351,7 +351,7 @@ class Item {
         this.qty=qty;
     }
 
-}
+}*/
 
 class Customer {
 
