@@ -7,8 +7,12 @@ import {OrderDetails} from "../dto/OrderDetails.js"
 import {Order} from "../dto/Order.js"
 import {Item} from "../dto/Item.js"
 import {Customer} from "../dto/Customer.js"
+import {Regex} from "../controller/Regex.js"
 
-document.getElementById("D-Bord").style.display = 'block';
+document.getElementById("loader").style.display = "block";
+
+document.getElementById("D-Bord").style.display = 'none';
+document.getElementById("main").style.display = 'none';
 document.getElementById("customer-form").style.display = 'none';
 document.getElementById("Item-from").style.display = 'none';
 document.getElementById("order-from").style.display = 'none';
@@ -51,6 +55,24 @@ document.getElementById("P-Order").addEventListener('click', function () {
     document.getElementById("order-from").style.display = 'none';
     document.getElementById("PlaceOrder").style.display = 'block';
 });
+
+function setItemProperty() {
+    $('#MyItemTable>tbody>tr').click(function () {
+
+        let code=$(this).children().eq(0).text();
+        let description=$(this).children().eq(1).text();
+        let price=$(this).children().eq(2).text();
+        let qty=$(this).children().eq(3).text();
+
+
+        $("#code").val(code);
+        $("#Description").val(description);
+        $("#Price").val(price);
+        $("#QTY").val(qty);
+
+
+    })
+}
 
 function setPropety() {
     $('#myCustomerTable>tbody>tr').click(function () {
@@ -134,16 +156,6 @@ function customerCount() {
     $('#AllCustomer').text("+ "+cust.length);
 }
 
-$('#FName').keydown(function (e) {
-    const reg=/^[a-zA-Z-'`]+[ a-zA-Z-'`]$/;
-    $('#FName').css('color',"black");
-    if (e.key=="Enter" && reg.test($('#FName').val())){
-        $('#FName').css('color',"black")
-        $('#LName').focus();
-    }else {
-        $('#FName').css('color',"red");
-    }
-});
 
 function getNextId() {
     if (cust.length==0){
@@ -210,12 +222,15 @@ $('#NewItem').click(function () {
     $('#Price').val("");
     $('#QTY').val("");
 
+    setItemProperty();
+
 
 });
 
 $('#Customer').click(function () {
 
 });
+
 $('#customer_id').on("keyup",function () {
     let customerName = OrderModel.getCustomerName($('#customer_id').val());
     $('#customer_name').text(customerName);
@@ -420,6 +435,81 @@ class Item {
 
 }*/
 
+/*$('#FName').keydown(function (e) {
+    const reg=/^[a-zA-Z-'`]+[ a-zA-Z-'`]$/;
+    $('#FName').css('color',"black");
+    if (e.key=="Enter" && reg.test($('#FName').val())){
+        $('#FName').css('color',"black")
+        $('#LName').focus();
+    }else {
+        $('#FName').css('color',"red");
+    }
+});*/
+
+$('#amount').keyup(function () {
+  Regex.test(/^([1-9]\d*(\.|\,)\d*|0?(\.|\,)\d*[1-9]\d*|[1-9]\d*)$/ ,$('#amount'),$('#place_order'));
+});
+
+$('#order_qty').keyup(function () {
+    Regex.test(/(^\d{1,10}$)/ ,$('#order_qty'),$('#add_to_cart'));
+});
+//===================Customer==========================
+$('#FName').keyup(function () {
+    Regex.test(/^[A-Za-z ]{5,}$/ ,$('#FName'),$('#NewCustAdd'));
+});
+$('#LName').keyup(function () {
+    Regex.test(/^[A-Za-z ]{5,}$/ ,$('#LName'),$('#NewCustAdd'));
+});
+$('#ContactNumber').keyup(function () {
+    Regex.test(/^[0-9]{2,}([.][0-9]{2})?$/ ,$('#ContactNumber'),$('#NewCustAdd'));
+});
+$('#Gmail').keyup(function () {
+    Regex.test(/[a-zA-Z0-9_%+-]/ ,$('#Gmail'),$('#NewCustAdd'));
+});
+$('#QTY').keyup(function () {
+    Regex.test(/(^\d{1,10}$)/ ,$('#QTY'),$('#NewItem'));
+});
+$('#Price').keyup(function () {
+    Regex.test(/^([1-9]\d*(\.|\,)\d*|0?(\.|\,)\d*[1-9]\d*|[1-9]\d*)$/ ,$('#Price'),$('#NewItem'));
+});
+$('#Description').keyup(function () {
+    Regex.test(/^[A-Za-z ]{5,}$/ ,$('#Description'),$('#NewItem'));
+});
 
 
+/*const CUS_ID_REGEX = /^(C00-)[0-9]{3}$/;
+const CUS_NAME_R
+EGEX = /^[A-Za-z ]{5,}$/;
+const CUS_ADDRESS_REGEX = /^[A-Za-z0-9 ]{8,}$/;
+// const CUS_EMAIL_REGEX = /^[0-9]{2,}([.][0-9]{2})?$/;
+const CUS_EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;*/
 
+
+//================================================Loader++++++++++++++++++++
+$('body').ready(function () {
+    document.getElementById("loader").style.display = "block";
+
+    document.getElementById("D-Bord").style.display = 'none';
+    document.getElementById("main").style.display = 'none';
+    document.getElementById("customer-form").style.display = 'none';
+    document.getElementById("Item-from").style.display = 'none';
+    document.getElementById("order-from").style.display = 'none';
+    document.getElementById("PlaceOrder").style.display = 'none';
+    myFunction();
+    }
+);
+var myVar;
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("main").style.display = 'block';
+    document.getElementById("D-Bord").style.display = 'block';
+    document.getElementById("customer-form").style.display = 'none';
+    document.getElementById("Item-from").style.display = 'none';
+    document.getElementById("order-from").style.display = 'none';
+    document.getElementById("PlaceOrder").style.display = 'none';
+
+}

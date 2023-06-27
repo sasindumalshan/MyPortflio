@@ -5,13 +5,27 @@
     <title>Fashion Fiesta</title>
     <link href="assest/css/bootstrap.css" rel="stylesheet">
     <link href="assest/css/My%20css.css" rel="stylesheet">
-    <link rel="stylesheet" href="assest/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.css">
-
+    <link href="assest/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet">
 
 
 </head>
 <body>
-<section>
+<section id="loader">
+    <section class="container f-box">
+        <div  class="d-flex justify-content-center flex-wrap align-items-center f-box">
+            <div class="col-box" >
+                <div id="loader-g"></div>
+            </div>
+            <div  class="col-box">
+                <h1 id="logo" CLASS="m-5">Fashion Fiesta</h1>
+            </div>
+        </div>
+
+
+
+    </section>
+</section>
+<section id="main">
     <div class="container m-0">
         <div class="row vw-100">
             <div class="col-auto p-0">
@@ -22,36 +36,47 @@
                         <h2 class="d-inline-block text-white">DEVIL</h2>
                     </div>
                     <div class="p-2">
-                        <button id="Home" class="btn btn-primary dashBord-button" type="button"><i class="fa-solid fa-house m-2"></i>Home</button>
+                        <button class="btn btn-primary dashBord-button" id="Home" type="button"><i
+                                class="fa-solid fa-house m-2"></i>Home
+                        </button>
                     </div>
                     <div class="p-2">
-                        <button id="Customer" class="btn btn-primary dashBord-button" type="button"><i class="fa-solid fa-user m-2"></i>Customer</button>
+                        <button class="btn btn-primary dashBord-button" id="Customer" type="button"><i
+                                class="fa-solid fa-user m-2"></i>Customer
+                        </button>
                     </div>
                     <div class="p-2">
-                        <button id="Item" class="btn btn-primary dashBord-button" type="button"><i class="fa-solid fa-cubes-stacked m-2"></i>Items</button>
+                        <button class="btn btn-primary dashBord-button" id="Item" type="button"><i
+                                class="fa-solid fa-cubes-stacked m-2"></i>Items
+                        </button>
                     </div>
                     <div class="p-2">
-                        <button id="Orders" class="btn btn-primary dashBord-button" type="button"><i class="fa-solid fa-cart-shopping m-2"></i>Orders</button>
+                        <button class="btn btn-primary dashBord-button" id="Orders" type="button"><i
+                                class="fa-solid fa-cart-shopping m-2"></i>Orders
+                        </button>
                     </div>
                     <div class="p-2">
-                        <button id="P-Order" class="btn btn-primary dashBord-button" type="button"><i class="fa-solid fa-cart-arrow-down m-2"></i>Place Order</button>
+                        <button class="btn btn-primary dashBord-button" id="P-Order" type="button"><i
+                                class="fa-solid fa-cart-arrow-down m-2"></i>Place Order
+                        </button>
                     </div>
                 </div>
 
             </div>
             <div class="col ">
                 <!--             Home                -->
-                <div  id="D-Bord">
+                <div id="D-Bord">
                     <div class="row p-0">
                         <div>
                             <div class="d-inline-block text-white rounded-4 mt-5 m-5 p-3"
                                  style="width: 80%;height: 200px; background-color: #56e797">
-                                <img id="image-Welcome" src="assest/image/—Pngtree—daily%20shopping%20cart_5398373.png" >
+                                <img id="image-Welcome" src="assest/image/—Pngtree—daily%20shopping%20cart_5398373.png">
                                 <h4 class="mb-4">WELCOME </h4>
-                                <p>Hello highly valued customer. <br>We are glad to have you on the team. We promise to give you the best service. Welcome!</p>
+                                <p>Hello highly valued customer. <br>We are glad to have you on the team. We promise to
+                                    give you the best service. Welcome!</p>
                             </div>
                         </div>
-                        <div class="m-5  w-auto " >
+                        <div class="m-5  w-auto ">
                             <div class="d-inline-block bg-primary-subtle rounded-4 mt-5 m-3 p-3"
                                  style="width: 200px;height: 100px;">
                                 <h6>All Customers</h6>
@@ -74,7 +99,7 @@
                                 <h3 class="m-3">+00</h3>
                             </div>
                         </div>
-                        <div class="  ml" style="width: 80%;" >
+                        <div class="  ml" style="width: 80%;">
                             <div class="d-inline-block bg-green rounded-4 mt-5 m-3 p-3"
                                  style="width: 200px;height: 100px;">
                                 <h6>All Customers</h6>
@@ -93,15 +118,19 @@
 
 
                         </div>
-                        <div style="width: 600px;" class="mb-5  ml">
+                        <div class="mb-5  ml" style="width: 600px;">
                             <h6>Today Employee Attendance</h6>
-                            <div class="progress" role="progressbar"  aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div aria-label="Example with label" aria-valuemax="100" aria-valuemin="0"
+                                 aria-valuenow="25"
+                                 class="progress" role="progressbar">
                                 <div class="progress-bar" style="width: 25%">25%</div>
                             </div>
                         </div>
-                        <div style="width: 300px;" class="mb-5  ml">
+                        <div class="mb-5  ml" style="width: 300px;">
                             <h6>Today Employee Attendance</h6>
-                            <div class="progress" role="progressbar"  aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div aria-label="Example with label" aria-valuemax="100" aria-valuemin="0"
+                                 aria-valuenow="25"
+                                 class="progress" role="progressbar">
                                 <div class="progress-bar" style="width: 25%">25%</div>
                             </div>
                         </div>
@@ -112,22 +141,23 @@
                 </div>
                 <!--            customer                -->
                 <section id="customer-form">
-                    <div  class="row p-0">
+                    <div class="row p-0">
                         <div class="col-auto p-5 mt-5" style="width: 70%;">
 
                             <div class="input-group rounded">
                                 <input aria-describedby="search-addon" aria-label="Search" class="form-control rounded"
                                        placeholder="Search"
                                        type="search"/>
-                                <span class="input-group-text border-0" id="search-addon"><i class="fa-solid fa-magnifying-glass"></i></i></span>
+                                <span class="input-group-text border-0" id="search-addon"><i
+                                        class="fa-solid fa-magnifying-glass"></i></i></span>
                             </div>
 
 
                             <div>
                                 <div class="d-inline-block bg-primary-subtle rounded-4 mt-5 m-3 p-3"
                                      style="width: 200px;height: 100px;">
-                                    <h6 >All Customers</h6>
-                                    <h3 id="AllCustomer" class="m-3">+00</h3>
+                                    <h6>All Customers</h6>
+                                    <h3 class="m-3" id="AllCustomer">+00</h3>
                                 </div>
                                 <div class="d-inline-block bg-primary-subtle rounded-4 m-3 p-3"
                                      style="width: 200px;height: 100px;">
@@ -137,7 +167,7 @@
 
                             </div>
                             <div>
-                                <table id="myCustomerTable" class="table">
+                                <table class="table" id="myCustomerTable">
                                     <thead>
                                     <tr>
                                         <th scope="col">#</th>
@@ -162,28 +192,30 @@
                             </div>
                             <div class="input-group mb-4 mt-5">
                                 <span class="input-group-text">First and last name</span>
-                                <input id="FName" aria-label="First name" class="form-control text-color" type="text">
-                                <input id="LName" aria-label="Last name" class="form-control text-color" type="text">
+                                <input aria-label="First name" class="form-control text-color" id="FName" type="text">
+                                <input aria-label="Last name" class="form-control text-color" id="LName" type="text">
                             </div>
                             <div class="input-group mb-4">
                                 <span class="input-group-text">Address</span>
-                                <input id="Address" aria-label="First name" class="form-control text-color" type="text">
+                                <input aria-label="First name" class="form-control text-color" id="Address" type="text">
                             </div>
                             <div class="input-group mb-4">
                                 <span class="input-group-text">Contact Number</span>
-                                <input id="ContactNumber" aria-label="First name" class="form-control text-color" type="text">
+                                <input aria-label="First name" class="form-control text-color" id="ContactNumber"
+                                       type="text">
                             </div>
                             <div class="input-group mb-3">
-                                <input id="Gmail" aria-describedby="basic-addon2" aria-label="Recipient's username"
+                                <input aria-describedby="basic-addon2" aria-label="Recipient's username"
                                        class="form-control text-color"
+                                       id="Gmail"
                                        placeholder="your Gmail" type="text">
                                 <span class="input-group-text" id="basic-addon2">@gmail.com</span>
                             </div>
 
                             <div class="mb-5">
-                                <button id="NewCustAdd" class="btn btn-primary w-50" type="button">New Customer</button>
-                                <button id="NewCustUpdate" class="btn btn-success" type="button">Update</button>
-                                <button id="NewCustRemov" class="btn btn-danger" type="button">Remove</button>
+                                <button class="btn btn-primary w-50" id="NewCustAdd" type="button">New Customer</button>
+                                <button class="btn btn-success" id="NewCustUpdate" type="button">Update</button>
+                                <button class="btn btn-danger" id="NewCustRemov" type="button">Remove</button>
                             </div>
 
                             <img class="opacity-50" src="assest/image/—Pngtree—shopping%20cart_1459647.png" width="300">
@@ -193,13 +225,14 @@
                 </section>
                 <!--            Items                -->
                 <section id="Item-from">
-                    <div  class="row p-0">
+                    <div class="row p-0">
                         <div class="col-auto p-5 mt-5" style="width: 70%;">
                             <div class="input-group rounded">
                                 <input aria-describedby="search-addon" aria-label="Search" class="form-control rounded"
                                        placeholder="Search"
                                        type="search"/>
-                                <span class="input-group-text border-0" id="search-add"><i class="fa-solid fa-magnifying-glass"></i></i></span>
+                                <span class="input-group-text border-0" id="search-add"><i
+                                        class="fa-solid fa-magnifying-glass"></i></i></span>
                             </div>
                             <div>
                                 <div class="d-inline-block bg-primary-subtle rounded-4 mt-5 m-3 p-3"
@@ -215,11 +248,11 @@
 
                             </div>
                             <div>
-                                <table id="MyItemTable" class="table">
+                                <table class="table" id="MyItemTable">
                                     <thead>
                                     <tr>
                                         <th scope="col">#</th>
-<!--                                        <th scope="col">Code</th>-->
+                                        <!--                                        <th scope="col">Code</th>-->
                                         <th scope="col">Description</th>
                                         <th scope="col">Price</th>
                                         <th scope="col">Qty</th>
@@ -240,26 +273,34 @@
 
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="item-code">Item Code</span>
-                                <input id="code" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                <input aria-describedby="inputGroup-sizing-default" aria-label="Sizing example input"
+                                       class="form-control" id="code"
+                                       type="text">
                             </div>
 
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="inputGroup-sizing-Name">Description</span>
-                                <input id="Description" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                <input aria-describedby="inputGroup-sizing-default" aria-label="Sizing example input"
+                                       class="form-control"
+                                       id="Description" type="text">
                             </div>
 
                             <div class="input-group mb-3">
                                 <span class="input-group-text">Rs</span>
-                                <input id="Price" type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                                <input aria-label="Dollar amount (with dot and two decimal places)" class="form-control"
+                                       id="Price"
+                                       type="text">
                             </div>
 
                             <div class="input-group mb-3">
                                 <span class="input-group-text">QTY</span>
-                                <input id="QTY" type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                                <input aria-label="Dollar amount (with dot and two decimal places)" class="form-control"
+                                       id="QTY"
+                                       type="text">
                             </div>
 
                             <div class="mb-5">
-                                <button id="NewItem" class="btn btn-primary w-50" type="button">New Item</button>
+                                <button class="btn btn-primary w-50" id="NewItem" type="button">New Item</button>
                                 <button class="btn btn-success" type="button">Update</button>
                                 <button class="btn btn-danger" type="button">Remove</button>
                             </div>
@@ -269,14 +310,15 @@
                     </div>
                 </section>
                 <!--             Order              -->
-                <section id="order-from" >
+                <section id="order-from">
                     <div class="row p-0">
                         <div class="col-auto p-5 mt-5" style="width: 100%;">
                             <div class="input-group rounded">
                                 <input aria-describedby="search-addon" aria-label="Search" class="form-control rounded"
                                        placeholder="Search"
                                        type="search"/>
-                                <span class="input-group-text border-0" id="search-"><i class="fa-solid fa-magnifying-glass"></i></i></span>
+                                <span class="input-group-text border-0" id="search-"><i
+                                        class="fa-solid fa-magnifying-glass"></i></i></span>
                             </div>
                             <div>
                                 <div class="d-inline-block bg-primary-subtle rounded-4 mt-5 m-3 p-3"
@@ -292,7 +334,7 @@
 
                             </div>
                             <div>
-                                <table id="myCustomerOrder" class="table">
+                                <table class="table" id="myCustomerOrder">
                                     <thead>
                                     <tr>
                                         <th scope="col">#</th>
@@ -313,16 +355,17 @@
                 </section>
                 <!--            Place Order              -->
                 <section id="PlaceOrder">
-                    <div  class="row p-0">
+                    <div class="row p-0">
                         <div class="col-auto p-5 mt-5" style="width: 70%;">
                             <div class="input-group rounded mb-5">
                                 <input aria-describedby="search-addon" aria-label="Search" class="form-control rounded"
                                        placeholder="Search"
                                        type="search"/>
-                                <span class="input-group-text border-0" id="search"><i class="fa-solid fa-magnifying-glass"></i></i></span>
+                                <span class="input-group-text border-0" id="search"><i
+                                        class="fa-solid fa-magnifying-glass"></i></i></span>
                             </div>
                             <div>
-                                <table id="myCustomerOrderDetails" class="table">
+                                <table class="table" id="myCustomerOrderDetails">
                                     <thead>
                                     <tr>
                                         <th scope="col">#</th>
@@ -346,51 +389,59 @@
                             </div>
 
                             <div class="input-group mb-3">
-                                <input id="customer_id" type="text" class="form-control" placeholder="Customer ID" aria-label="Dollar amount (with dot and two decimal places)">
+                                <input aria-label="Dollar amount (with dot and two decimal places)" class="form-control"
+                                       id="customer_id" placeholder="Customer ID"
+                                       type="text">
                                 <button class="btn btn-dark"><i class="fa-solid fa-magnifying-glass"></i></button>
                             </div>
 
                             <div>
                                 <h6>Customer Name</h6>
-                                <p id="customer_name" class="text-capitalize">XXXXX XXXXX</p>
+                                <p class="text-capitalize" id="customer_name">XXXXX XXXXX</p>
                             </div>
 
                             <div class="input-group mb-3">
-                                <input id="item_code" type="text" class="form-control" placeholder="Item Code" aria-label="Dollar amount (with dot and two decimal places)">
+                                <input aria-label="Dollar amount (with dot and two decimal places)" class="form-control"
+                                       id="item_code" placeholder="Item Code"
+                                       type="text">
                                 <button class="btn btn-dark"><i class="fa-solid fa-magnifying-glass"></i></button>
                             </div>
 
                             <div>
                                 <h6>Item Description</h6>
-                                <p id="discription" class="text-capitalize">XXXXX XXXXX</p>
+                                <p class="text-capitalize" id="discription">XXXXX XXXXX</p>
                             </div>
 
                             <div>
                                 <h6>Item QTY</h6>
-                                <p id="item_qty" class="text-capitalize">00</p>
+                                <p class="text-capitalize" id="item_qty">00</p>
                             </div>
 
                             <div class="input-group mb-3">
                                 <span class="input-group-text">QTY</span>
-                                <input id="order_qty" type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                                <input aria-label="Dollar amount (with dot and two decimal places)" class="form-control"
+                                       id="order_qty"
+                                       type="text">
                             </div>
 
                             <div class="mb-5">
-                                <button id="add_to_cart" class="btn btn-primary w-50" type="button">Add Item</button>
+                                <button class="btn btn-primary w-50" id="add_to_cart" type="button">Add Item</button>
                             </div>
 
                             <div class="mb-3">
                                 <h4 class="d-inline-block input-group-text">Total</h4>
-                                <h3 id="total" class="text-capitalize d-inline-block">00.00</h3>
+                                <h3 class="text-capitalize d-inline-block" id="total">00.00</h3>
                             </div>
 
                             <div class="input-group mb-5">
                                 <span class="input-group-text">Rs</span>
-                                <input id="amount" type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                                <input aria-label="Dollar amount (with dot and two decimal places)" class="form-control"
+                                       id="amount"
+                                       type="text">
                             </div>
 
                             <div class="mb-5">
-                                <button id="place_order" class="btn btn-success" type="button">Place Order</button>
+                                <button class="btn btn-success" id="place_order" type="button">Place Order</button>
                             </div>
 
 
@@ -449,12 +500,10 @@
 
 </script>-->
 
+
 <script src="assest/js/bootstrap.js"></script>
 <script src="assest/js/jquery-3.7.0.min.js"></script>
-<script type="module" src="../controller/MyScript.js"></script>
-
-
-
+<script src="../controller/MyScript.js" type="module"></script>
 
 
 </body>
