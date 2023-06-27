@@ -7,7 +7,7 @@ import {OrderDetails} from "../dto/OrderDetails.js"
 import {Order} from "../dto/Order.js"
 import {Item} from "../dto/Item.js"
 import {Customer} from "../dto/Customer.js"
-import {Regex} from "../controller/Regex.js"
+import {Regex} from "./validation/Regex.js"
 
 document.getElementById("loader").style.display = "block";
 
