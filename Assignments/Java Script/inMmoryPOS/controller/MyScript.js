@@ -26,7 +26,6 @@ document.getElementById("Home").addEventListener('click', function () {
     document.getElementById("order-from").style.display = 'none';
     document.getElementById("PlaceOrder").style.display = 'none';
 });
-
 document.getElementById("Customer").addEventListener('click', function () {
     document.getElementById("D-Bord").style.display = 'none';
     document.getElementById("customer-form").style.display = 'block';
@@ -71,8 +70,12 @@ function setItemProperty() {
         $("#QTY").val(qty);
 
 
-    })
+    });
 }
+
+$('#itemUpdate').click(function () {
+
+});
 
 function setPropety() {
     $('#myCustomerTable>tbody>tr').click(function () {
@@ -200,6 +203,13 @@ $('#NewCustAdd').click(function () {
 
 });
 
+function clearItemInputs() {
+    $('#code').val("");
+    $('#Description').val("");
+    $('#Price').val("");
+    $('#QTY').val("");
+}
+
 $('#NewItem').click(function () {
     var item=new Item();
     item.setCode( $('#code').val());
@@ -217,18 +227,54 @@ $('#NewItem').click(function () {
         '<td>'+item.getPrice()+'</td>' +
         '<td>'+item.getQty()+'</td>' +
         '</tr>');
-    $('#code').val("");
-    $('#Description').val("");
-    $('#Price').val("");
-    $('#QTY').val("");
+
+    clearItemInputs();
 
     setItemProperty();
 
 
 });
 
-$('#Customer').click(function () {
+$('#itemUpdate').click(function () {
+    for (let i = 0; i <items.length; i++) {
+        if ($('#code').val()==items[i].getCode()){
+            items[i].setCode($("#code").val());
+            items[i].setDescription($("#Description").val());
+            items[i].setPrice($("#Price").val());
+            items[i].setQty($("#QTY").val());
 
+        }
+    }
+    $('#MyItemTable>tbody>tr').remove();
+    for (var item of items) {
+        $('#MyItemTable').append('<tr>' +
+            '<td><b>'+item.getCode()+'</td>' +
+            '<td>'+item.getDescription()+'</td>' +
+            '<td>'+item.getPrice()+'</td>' +
+            '<td>'+item.getQty()+'</td>' +
+            '</tr>');
+    }
+    clearItemInputs();
+    setItemProperty();
+});
+
+$('#itemRemove').click(function () {
+    for (let i = 0; i <items.length; i++) {
+        if ($('#code').val()==items[i].getCode()){
+            items.splice(items.indexOf(items[i]),1);
+        }
+    }
+    $('#MyItemTable>tbody>tr').remove();
+    for (var item of items) {
+        $('#MyItemTable').append('<tr>' +
+            '<td><b>'+item.getCode()+'</td>' +
+            '<td>'+item.getDescription()+'</td>' +
+            '<td>'+item.getPrice()+'</td>' +
+            '<td>'+item.getQty()+'</td>' +
+            '</tr>');
+    }
+
+    clearItemInputs();
 });
 
 $('#customer_id').on("keyup",function () {
