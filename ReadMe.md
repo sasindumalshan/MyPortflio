@@ -28,3 +28,14 @@ Services
 Footer
 
 ![MacBook Pro 14_ - 1](Screenshot%20(311).png)
+
+
+<h3>WEB POS (Fashion Fiesta)</h3>
+
+![Desktop - 1](readMeAssets/Screenshot%20(315).png)
+
+![Desktop - 1](readMeAssets/Screenshot%20(312).png)
+
+![Desktop - 1](readMeAssets/Screenshot%20(313).png)
+
+![Desktop - 1](readMeAssets/Screenshot%20(314).png)
