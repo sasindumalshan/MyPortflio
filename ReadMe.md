@@ -16,18 +16,18 @@ GitHub Pages : https://sasindumalshan.github.io/MyPortflio// <br>
 
 Home
 
-![Desktop - 1](Screenshot%20(308).png)
+![Desktop - 1](readMeAssets/Screenshot%20(308).png)
 
 About Me
 
-![iPad mini 8 3 - 1](Screenshot%20(309).png)
+![iPad mini 8 3 - 1](readMeAssets/Screenshot%20(309).png)
 
 Services
 
-![iPhone 13 Pro Max - 1](Screenshot%20(310).png)
+![iPhone 13 Pro Max - 1](readMeAssets/Screenshot%20(310).png)
 Footer
 
-![MacBook Pro 14_ - 1](Screenshot%20(311).png)
+![MacBook Pro 14_ - 1](readMeAssets/Screenshot%20(311).png)
 
 
 <h3>WEB POS (Fashion Fiesta)</h3>
